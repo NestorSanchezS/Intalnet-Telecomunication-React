@@ -1,5 +1,6 @@
 import React from "react";
+import { Layout } from "../layout/Layout";
 
 export const Preguntas = () => {
-  return <div>Preguntas</div>;
+  return <Layout>Preguntas</Layout>;
 };

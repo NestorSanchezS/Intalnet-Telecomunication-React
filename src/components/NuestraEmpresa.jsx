@@ -1,5 +1,6 @@
 import React from "react";
+import { Layout } from "../layout/Layout";
 
 export const NuestraEmpresa = () => {
-  return <div>NuestraEmpresa</div>;
+  return <Layout>NuestraEmpresa</Layout>;
 };
