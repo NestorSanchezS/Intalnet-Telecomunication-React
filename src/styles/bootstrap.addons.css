@@ -718,7 +718,7 @@ img { max-width: 100%; }
 
 .no-js .preloader, .lt-ie9 .preloader, .lt-ie10 .preloader { display: none; }
 
-.preloader_image { width: 256px; height: 256px; position: absolute; left: 50%; top: 50%; background: url(../img/preloader.gif) no-repeat 50% 50% transparent; margin: -128px 0 0 -128px; }
+.preloader_image { width: 256px; height: 256px; position: absolute; left: 50%; top: 50%; background: url(../assets/img/preloader.gif) no-repeat 50% 50% transparent; margin: -128px 0 0 -128px; }
 
 /* animated elements */
 .animate { visibility: hidden; }
@@ -736,27 +736,27 @@ img { max-width: 100%; }
 
 body.boxed { position: static; width: auto; height: auto; }
 
-.pattern1 { background-image: url(../img/patterns/pattern1.png); }
+.pattern1 { background-image: url(../assets/img/patterns/pattern1.png); }
 
-.pattern2 { background-image: url(../img/patterns/pattern2.png); }
+.pattern2 { background-image: url(../assets/img/patterns/pattern2.png); }
 
-.pattern3 { background-image: url(../img/patterns/pattern3.png); }
+.pattern3 { background-image: url(../assets/img/patterns/pattern3.png); }
 
-.pattern4 { background-image: url(../img/patterns/pattern4.png); }
+.pattern4 { background-image: url(../assets/img/patterns/pattern4.png); }
 
-.pattern5 { background-image: url(../img/patterns/pattern5.png); }
+.pattern5 { background-image: url(../assets/img/patterns/pattern5.png); }
 
-.pattern6 { background-image: url(../img/patterns/pattern6.png); }
+.pattern6 { background-image: url(../assets/img/patterns/pattern6.png); }
 
-.pattern7 { background-image: url(../img/patterns/pattern7.png); }
+.pattern7 { background-image: url(../assets/img/patterns/pattern7.png); }
 
-.pattern8 { background-image: url(../img/patterns/pattern8.png); }
+.pattern8 { background-image: url(../assets/img/patterns/pattern8.png); }
 
-.pattern9 { background-image: url(../img/patterns/pattern9.png); }
+.pattern9 { background-image: url(../assets/img/patterns/pattern9.png); }
 
-.pattern10 { background-image: url(../img/patterns/pattern10.png); }
+.pattern10 { background-image: url(../assets/img/patterns/pattern10.png); }
 
-.pattern11 { background-image: url(../img/patterns/pattern11.png); }
+.pattern11 { background-image: url(../assets/img/patterns/pattern11.png); }
 
 .boxed .container { padding-left: 50px; padding-right: 50px; }
 

@@ -2621,7 +2621,7 @@ img {
 }
 
 .preloader_image {
-	background: url(../img/preloader.gif) no-repeat 50% 50% transparent;
+	background: url(../assets/img/preloader.gif) no-repeat 50% 50% transparent;
 	height: 256px;
 	left: 50%;
 	margin: -128px 0 0 -128px;
