@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from "../components/Footer";
 import { NavBar } from "../components/NavBar";
 
 export const Layout = ({ children }) => {
@@ -11,6 +12,7 @@ export const Layout = ({ children }) => {
         <div id="box_wrapper">
           <NavBar />
           {children}
+          <Footer />
         </div>
       </div>
     </>
