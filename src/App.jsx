@@ -10,16 +10,14 @@ import { Servicios } from "./components/Servicios";
 
 export const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="nuestraempresa" element={<NuestraEmpresa />} />
-        <Route path="servicios" element={<Servicios />} />
-        <Route path="regulacion" element={<Regulacion />} />
-        <Route path="preguntas" element={<Preguntas />} />
-        <Route path="internetsano" element={<InternetSano />} />
-        <Route path="Contactenos" element={<Contactenos />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Inicio />} />
+      <Route path="nuestraempresa" element={<NuestraEmpresa />} />
+      <Route path="servicios" element={<Servicios />} />
+      <Route path="regulacion" element={<Regulacion />} />
+      <Route path="preguntas" element={<Preguntas />} />
+      <Route path="internetsano" element={<InternetSano />} />
+      <Route path="Contactenos" element={<Contactenos />} />
+    </Routes>
   );
 };

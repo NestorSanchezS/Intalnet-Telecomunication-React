@@ -804,6 +804,8 @@ input[type=checkbox] {
 	display: none;
 }
 
+
+
 .checkbox label + input[type="checkbox"],
 .checkbox label > input[type="checkbox"] {
 	display: inline-block;
@@ -15144,6 +15146,7 @@ a.logo {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
+	text-decoration:none
 }
 
 a.logo img {
