@@ -11,10 +11,12 @@ export const NavBar = () => {
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-4 col-md-5 col-11">
-                <a href="./" className="logo">
-                  <span className="logo-text py-20">
-                    <img src={intalnet} alt="" />
-                  </span>
+                <a className="logo">
+                  <Link to="/">
+                    <span className="logo-text py-20">
+                      <img src={intalnet} alt="logo intalnet" />
+                    </span>
+                  </Link>
                 </a>
               </div>
               <div className="col-xl-9 col-lg-8 col-md-7 col-1">
@@ -22,11 +24,14 @@ export const NavBar = () => {
                   <nav className="top-nav">
                     <ul className="nav sf-menu">
                       <li className="active">
-                        <a href="index.html">Inicio</a>
+                        <Link to="/">
+                          <a>Inicio</a>
+                        </Link>
                       </li>
-
                       <li>
-                        <a href="internet.html">Nuestra Empresa</a>
+                        <Link to="nuestraempresa">
+                          <a>Nuestra Empresa</a>
+                        </Link>
                       </li>
 
                       <li>

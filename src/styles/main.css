@@ -18017,6 +18017,7 @@ a.link-main2:hover {
 .links ul li a,
 .services-links ul li a {
 	color: #c280bf;
+	text-decoration: none;
 }
 
 .links ul li a:hover,

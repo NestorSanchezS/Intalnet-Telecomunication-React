@@ -13,7 +13,7 @@ export const Footer = () => {
               data-animation="fadeInUp"
             >
               <div className="widget widget_text">
-                <h4 className="widget-title">About</h4>
+                <h4 className="widget-title">Intalnet</h4>
                 <p>
                   Bienvenido al proveedor de servicios de Internet y banda ancha
                   más grande donde puede elegir el mejor plan de todos.
@@ -41,23 +41,23 @@ export const Footer = () => {
               className="col-md-6 col-xl-3 order-xl-2 order-md-4 animate"
               data-animation="fadeInUp"
             >
-              <div className="widget links">
-                <h4 className="widget-title">Links</h4>
+              <div className="widget services-links">
+                <h4 className="widget-title">Servicios</h4>
                 <ul>
                   <li className="cat-item">
-                    <a href="blog-right.html">Packages</a>
+                    <a href="blog-right.html">Canales Full HD</a>
                   </li>
                   <li className="cat-item">
-                    <a href="blog-right.html">MaxiNet Media</a>
+                    <a href="blog-right.html">Internet Dedicado</a>
                   </li>
                   <li className="cat-item">
-                    <a href="blog-right.html">Connection</a>
+                    <a href="blog-right.html">Internet de Alta Velocidad</a>
                   </li>
                   <li className="cat-item">
-                    <a href="blog-right.html">Support</a>
+                    <a href="blog-right.html">Fibra optica</a>
                   </li>
                   <li className="cat-item">
-                    <a href="blog-right.html">Video Tutorials</a>
+                    <a href="blog-right.html">Accesorios de tecnologia</a>
                   </li>
                 </ul>
               </div>
@@ -67,24 +67,22 @@ export const Footer = () => {
               data-animation="fadeInUp"
             >
               <div className="widget services-links">
-                <h4 className="widget-title">Servicios</h4>
-                <ul>
-                  <li className="cat-item">
-                    <a href="blog-right.html">Canales Full HD</a>
-                  </li>
-                  <li className="cat-item">
-                    <a href="blog-right.html">Servidor Dedicado</a>
-                  </li>
-                  <li className="cat-item">
-                    <a href="blog-right.html">Internet de Alta Velocidad</a>
-                  </li>
-                  <li className="cat-item">
-                    <a href="blog-right.html">SFibra optica</a>
-                  </li>
-                  <li className="cat-item">
-                    <a href="blog-right.html">Accesorios de tecnologia</a>
-                  </li>
-                </ul>
+                <h4 className="widget-title">Visitanos</h4>
+                <p>
+                  Carrera 14 # 12-26 Barrio Centro.{" "}
+                  <strong>Valencia - Córdoba</strong>
+                </p>
+                <p>
+                  Barrio centro.
+                  <strong>Tierralta - Córdoba</strong>
+                </p>
+                <p>
+                  Carrera 14 Barrio Pradera. <strong>Montería - Córdoba</strong>
+                </p>
+                <a href="#" className="small-text">
+                  <i className="fa fa-map-marker color-main3 fs-14"></i>
+                  Get Direction
+                </a>
               </div>
             </div>
             <div
@@ -92,18 +90,30 @@ export const Footer = () => {
               data-animation="fadeInUp"
             >
               <div className="widget widget_icons_list">
-                <h4 className="widget-title">Call Us</h4>
-                <p>23-456-7890</p>
+                <h4 className="widget-title">Llamanos</h4>
+                <strong>Monteria Cordoba:</strong>
+                <p>3148042601</p>
+                <strong>Tierralta Cordoba:</strong>
+                <p>3204013011</p>
+                <strong>Valencia Cordoba:</strong>
+                <p>3152522215</p>
                 <a href="#" className="small-text">
                   <i className="fa fa-envelope-o color-main fs-14"></i>
-                  email us
+                  intalnet@hotmail.com
                 </a>
-                <h4 className="widget-title">Visit Us</h4>
-                <p>246 Benson St., Ashwaubenon</p>
+                {/* <h4 className="widget-title">Visitanos</h4>
+                <p>
+                  Carrera 14 # 12-26 Barrio Centro. <h6>Valencia - Córdoba</h6>
+                </p>
+                <p>
+                  Barrio centro.
+                  <h6>Tierralta - Córdoba</h6>
+                </p>
+                <p>Carrera 14 # 12-26 Barrio Centro. Valencia - Córdoba</p>
                 <a href="#" className="small-text">
                   <i className="fa fa-map-marker color-main3 fs-14"></i>
                   Get Direction
-                </a>
+                </a> */}
               </div>
               <div className="divider-45 d-none d-md-block d-xlz-none"></div>
             </div>
@@ -116,8 +126,8 @@ export const Footer = () => {
             <div className="divider-15 d-none d-lg-block"></div>
             <div className="col-md-12 text-center">
               <p>
-                &copy; Copyright <span className="copyright_year">2019</span>
-                All Rights Reserved
+                &copy; Copyright <span className="copyright_year">2022</span>
+                Intalnet Desarrollador por Nestor Sanchez
               </p>
             </div>
             <div className="divider-15 d-none d-lg-block"></div>

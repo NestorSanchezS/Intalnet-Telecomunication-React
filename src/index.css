@@ -31,3 +31,52 @@ body {
 	overflow-y: scroll;
 	position: relative;
 }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	word-break: break-word;
+}
+
+h1 {
+	font-size: 60px;
+	margin-bottom: 13px;
+	margin-top: 33px;
+}
+
+h2 {
+	font-size: 50px;
+	margin-bottom: 13px;
+	margin-top: 33px;
+}
+
+h3 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	margin-top: 37px;
+}
+
+h4 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-top: 37px;
+}
+
+h5 {
+	font-size: 24px;
+	margin-bottom: 23px;
+	margin-top: 43px;
+}
+
+h6 {
+	font-size: 20px;
+	margin-bottom: 23px;
+	margin-top: 43px;
+}
