@@ -6,70 +6,65 @@ import intalnet from "../assets/INTALNET-TELECOMUNICACIONES.png";
 export const NavBar = () => {
   return (
     <>
+      {/* nav completo */}
       <div className="header_absolute header_layout_1">
         <header className="page_header ls justify-nav-end">
           <div className="container-fluid">
             <div className="row align-items-center">
+              {/* Logo intalnet que tambien lleva a inicio */}
               <div className="col-xl-2 col-lg-4 col-md-5 col-11">
-                <a className="logo">
-                  <Link to="/">
-                    <span className="logo-text py-20">
-                      <img src={intalnet} alt="logo intalnet" />
-                    </span>
-                  </Link>
-                </a>
+                <Link to="/" className="logo">
+                  <span className="logo-text py-20">
+                    <img src={intalnet} alt="logo intalnet" />
+                  </span>
+                </Link>
               </div>
               <div className="col-xl-9 col-lg-8 col-md-7 col-1">
                 <div className="nav-wrap">
+                  {/* Inicio de nav principal */}
                   <nav className="top-nav">
                     <ul className="nav sf-menu">
                       <li className="active">
-                        <Link to="/">
-                          <a>Inicio</a>
-                        </Link>
+                        <Link to="/">Inicio</Link>
                       </li>
                       <li>
-                        <Link to="nuestraempresa">
-                          <a>Nuestra Empresa</a>
-                        </Link>
+                        <Link to="/nuestraempresa">Nuestra Empresa</Link>
                       </li>
 
                       <li>
-                        <a href="about.html">Servicios</a>
+                        <a>Servicios</a>
                         <ul>
                           <li>
-                            <a href="team.html">Planes por sedes</a>
+                            <a>Planes por sedes</a>
                             <ul>
                               <li>
-                                <a href="team.html">Montería Córdoba</a>
+                                <Link to="/servicios">Montería Córdoba</Link>
                               </li>
                               <li>
-                                <a href="team-single.html">Tierralta Córdoba</a>
+                                <Link to="/servicios">Tierralta Córdoba</Link>
                               </li>
                               <li>
-                                <a href="team-single.html">Valencia Córdoba</a>
+                                <Link to="/servicios">Valencia Córdoba</Link>
                               </li>
                               <li>
-                                <a href="team-single.html">
+                                <Link to="/servicios">
                                   Los Córodoba, Córdoba
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </li>
 
                           <li>
-                            <a href="services.html">Otros Services</a>
+                            <a>Otros Services</a>
                             <ul>
                               <li>
-                                <a href="services.html">Camaras se seguridad</a>
+                                <a>Camaras se seguridad</a>
                               </li>
                               <li>
-                                <a href="services2.html">Internet dedicado</a>
+                                <a>Internet dedicado</a>
                               </li>
                               <li>
-                                <a href="services3.html">
-                                  Accesorios de tecnologia
-                                </a>
+                                <a>Accesorios de tecnologia</a>
                               </li>
                             </ul>
                           </li>
@@ -77,7 +72,7 @@ export const NavBar = () => {
                       </li>
 
                       <li>
-                        <a href="blog-right.html">Info Usuarios</a>
+                        <a>Info Usuarios</a>
                         <ul>
                           <li>
                             <a href="blog-right.html">Preguntas Frecuentes</a>
@@ -121,31 +116,31 @@ export const NavBar = () => {
                   <nav className="mainmenu_side_wrapper">
                     <ul className="nav menu-click">
                       <li>
-                        <a href="faq.html">
+                        <a>
                           <i className="color-main7 fa fa-question-circle"></i>
                           FAQ
                         </a>
                       </li>
                       <li>
-                        <a href="booking-form.html">
+                        <a>
                           <i className="color-main7 fa fa-paper-plane"></i>
                           Submit a ticket
                         </a>
                       </li>
                       <li>
-                        <a href="terms_of_use.html">
+                        <a>
                           <i className="color-main7 fa fa-rocket"></i>
                           Terms Of Use
                         </a>
                       </li>
                       <li>
-                        <a href="availability-map.html">
+                        <a>
                           <i className="color-main7 fa fa-file-text-o"></i>
                           Terms of Service
                         </a>
                       </li>
                       <li>
-                        <a href="contact.html">
+                        <a>
                           <i className="color-main7 fa fa-phone"></i>
                           call me back
                         </a>

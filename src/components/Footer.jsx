@@ -20,7 +20,7 @@ export const Footer = () => {
                 </p>
                 <div className="widget widget_social_buttons">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/Intalnet-Telecomunicaciones-112356107172041"
                     className="fa fa-facebook color-bg-icon rounded-icon"
                     title="facebook"
                   ></a>

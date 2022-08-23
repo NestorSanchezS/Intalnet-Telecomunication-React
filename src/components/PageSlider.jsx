@@ -21,7 +21,7 @@ export const PageSlider = () => {
                         <h1 className="intro_featured_word">
                           Preparate
                           <br />
-                          ParaName
+                          Para un
                           <br />
                           un internet
                           <br />

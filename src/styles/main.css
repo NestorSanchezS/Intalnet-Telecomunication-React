@@ -198,7 +198,9 @@ h6 {
 		font-size: 1.1rem;
 	}
 }
-
+a {
+	cursor: pointer;
+}
 h1:first-child,
 h2:first-child,
 h3:first-child,
@@ -3065,6 +3067,7 @@ a.pswp__share--download:hover {
 		transform: rotate(0);
 	}
 }
+
 
 /*
 	
