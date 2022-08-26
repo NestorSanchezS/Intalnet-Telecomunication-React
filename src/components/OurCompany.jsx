@@ -3,9 +3,9 @@ import { Layout } from "../layout/Layout";
 import intalnet from "../assets/INTALNET-TELECOMUNICACIONES.png";
 import valores from "../assets/valoresintalnet.png";
 
-export const NuestraEmpresa = () => {
+export const OurCompany = () => {
   return (
-    <Layout>
+    <>
       <section className="page_title cs s-pt-60 s-pb-10 s-pt-lg-130 s-pb-lg-60 page_title text-center">
         <div className="container-fluid">
           <div className="row">
@@ -63,6 +63,6 @@ export const NuestraEmpresa = () => {
           <div className="divider-45 d-none d-lg-block"></div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };

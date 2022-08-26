@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "../layout/Layout";
 
-export const Servicios = () => {
-  return <Layout>Servicios</Layout>;
+export const Services = () => {
+  return <>Servicios</>;
 };

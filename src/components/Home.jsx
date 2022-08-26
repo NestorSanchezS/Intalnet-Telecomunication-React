@@ -1,11 +1,10 @@
 import React from "react";
-import { Layout } from "../layout/Layout";
 import { PageSlider } from "./PageSlider";
 
-export const Inicio = () => {
+export const Home = () => {
   return (
-    <Layout>
+    <>
       <PageSlider />
-    </Layout>
+    </>
   );
 };

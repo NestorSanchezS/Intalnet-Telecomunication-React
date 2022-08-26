@@ -13,7 +13,7 @@ export const NavBar = () => {
             <div className="row align-items-center">
               {/* Logo intalnet que tambien lleva a inicio */}
               <div className="col-xl-2 col-lg-4 col-md-5 col-11">
-                <Link to="/" className="logo">
+                <Link className="logo" to="/">
                   <span className="logo-text py-20">
                     <img src={intalnet} alt="logo intalnet" />
                   </span>
@@ -28,7 +28,7 @@ export const NavBar = () => {
                         <Link to="/">Inicio</Link>
                       </li>
                       <li>
-                        <Link to="/nuestraempresa">Nuestra Empresa</Link>
+                        <Link to="/ourcompany">Nuestra Empresa</Link>
                       </li>
 
                       <li>
@@ -38,16 +38,16 @@ export const NavBar = () => {
                             <a>Planes por sedes</a>
                             <ul>
                               <li>
-                                <Link to="/servicios">Montería Córdoba</Link>
+                                <Link to="/services">Montería Córdoba</Link>
                               </li>
                               <li>
-                                <Link to="/servicios">Tierralta Córdoba</Link>
+                                <Link to="/services">Tierralta Córdoba</Link>
                               </li>
                               <li>
-                                <Link to="/servicios">Valencia Córdoba</Link>
+                                <Link to="/services">Valencia Córdoba</Link>
                               </li>
                               <li>
-                                <Link to="/servicios">
+                                <Link to="/services">
                                   Los Córodoba, Córdoba
                                 </Link>
                               </li>

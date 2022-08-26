@@ -1,8 +1,9 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import { Footer } from "../components/Footer";
-import { NavBar } from "../components/NavBar";
 
-export const Layout = ({ children }) => {
+import { NavBar } from "../components/NavBar";
+export const Layout = () => {
   return (
     <>
       <div className="preloader">
@@ -11,7 +12,7 @@ export const Layout = ({ children }) => {
       <div id="canvas">
         <div id="box_wrapper">
           <NavBar />
-          {children}
+          <Outlet />
           <Footer />
         </div>
       </div>
