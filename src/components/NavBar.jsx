@@ -13,11 +13,11 @@ export const NavBar = () => {
             <div className="row align-items-center">
               {/* Logo intalnet que tambien lleva a inicio */}
               <div className="col-xl-2 col-lg-4 col-md-5 col-11">
-                <Link className="logo" to="/">
+                <a className="logo" href="/">
                   <span className="logo-text py-20">
                     <img src={intalnet} alt="logo intalnet" />
                   </span>
-                </Link>
+                </a>
               </div>
               <div className="col-xl-9 col-lg-8 col-md-7 col-1">
                 <div className="nav-wrap">
@@ -25,7 +25,7 @@ export const NavBar = () => {
                   <nav className="top-nav">
                     <ul className="nav sf-menu">
                       <li className="active">
-                        <Link to="/">Inicio</Link>
+                        <a href="/">Inicio</a>
                       </li>
                       <li>
                         <Link to="/ourcompany">Nuestra Empresa</Link>
@@ -89,7 +89,7 @@ export const NavBar = () => {
                       </li>
 
                       <li>
-                        <a href="contact.html">Contact</a>
+                        <Link to="/contactus">Contactenos</Link>
                       </li>
                     </ul>
                   </nav>

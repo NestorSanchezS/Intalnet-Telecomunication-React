@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import slide01 from "../assets/images/slide01.jpg";
 import slide02 from "../assets/images/slide02.jpg";
 import slide03 from "../assets/images/slide03.jpg";

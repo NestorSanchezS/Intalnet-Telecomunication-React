@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout } from "../layout/Layout";
+
 import intalnet from "../assets/INTALNET-TELECOMUNICACIONES.png";
 import valores from "../assets/valoresintalnet.png";
 
@@ -45,7 +45,9 @@ export const OurCompany = () => {
                 confiables, con el fin de garantizar la calidad, velocidad y
                 oportunidad del servicio, llegando a los hogares, instituciones
                 publicas, empresas privadas, y todos los sectores que requieran
-                alinearse e ingresar a la nueva era digital.
+                alinearse e ingresar a la nueva era digital, creándole a la
+                sociedad oportunidades de acceso a tecnologías de la información
+                y comunicación
               </p>
               <h1 className="text-center widget-title mt-60">VISION</h1>
               <p className="text-center big ">
