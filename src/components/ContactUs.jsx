@@ -1,4 +1,5 @@
 import React from "react";
+import { SERVICES } from "../constans";
 
 export const ContactUs = () => {
   return (
@@ -44,11 +45,14 @@ export const ContactUs = () => {
                     <div className="form-group has-placeholder">
                       <label htmlFor="select">Seleccione</label>
                       <i className="fa fa-gear color-main"></i>
-                      <select className="form-control" id="select">
-                        <option>Lo quiero para mi residencia / Negocio</option>
-                        <option>Servicio Internet Dedicado</option>
-                        <option>Camaras Seguridad</option>
-                        <option>Deseo accesorio tecnologico</option>
+                      <select
+                        className="form-control"
+                        id="select"
+                        name="service"
+                      >
+                        {SERVICES.map((service) => (
+                          <option key={service.id}>{service.name}</option>
+                        ))}
                       </select>
                     </div>
                   </div>
