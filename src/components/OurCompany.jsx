@@ -1,5 +1,4 @@
 import React from "react";
-
 import intalnet from "../assets/INTALNET-TELECOMUNICACIONES.png";
 import valores from "../assets/valoresintalnet.png";
 

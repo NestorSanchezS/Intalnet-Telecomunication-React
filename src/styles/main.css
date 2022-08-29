@@ -17557,9 +17557,9 @@ img.absolute_image {
 	background-image: url("../assets/img/background-gradient02.jpg");
 }
 
-.booking-form {
+/* .booking-form {
 	background-image: url("../assets/img/booking-form-bg.png");
-}
+} */
 
 @media (max-width: 1199px) {
 	.booking-form h5 {

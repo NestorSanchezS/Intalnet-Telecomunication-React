@@ -27,11 +27,7 @@ export const PageSlider = () => {
                           <br />
                           de alta velocidad
                         </h1>
-                        <h5 className="intro_before_featured_word intro-absolute text-uppercase fw-200">
-                          El mejor servicio
-                          <br />
-                          en el departamento
-                        </h5>
+                        <h5 className="intro_before_featured_word intro-absolute text-uppercase fw-200"></h5>
                       </div>
                       <div className="intro_layer" data-animation="fadeInUp">
                         <p className="text-uppercase intro_after_featured_word">
@@ -55,20 +51,16 @@ export const PageSlider = () => {
                         <h1 className="slide2 intro_featured_word">
                           Internet
                           <br />
-                          for
+                          para
                           <br />
-                          Institution
-                          <br />& SME
+                          Institucion
+                          <br />& Negocio
                         </h1>
-                        <h5 className="fw-300 text-uppercase intro_before_featured_word intro-absolute">
-                          Leased Line Internet
-                          <br />
-                          with A+ Category
-                        </h5>
+                        <h5 className="fw-300 text-uppercase intro_before_featured_word intro-absolute"></h5>
                       </div>
                       <div className="intro_layer" data-animation="fadeInUp">
                         <p className="text-uppercase intro_after_featured_word">
-                          Check our Services
+                          Revisa nuestros servicios
                         </p>
                       </div>
                     </div>
@@ -107,23 +99,23 @@ export const PageSlider = () => {
                     <div className="intro_layers">
                       <div className="intro_layer" data-animation="fadeInRight">
                         <h1 className="slide2 intro_featured_word">
-                          Don’t
+                          Velocidad
                           <br />
-                          Suffer
+                          de hasta
                           <br />
-                          The
+                          1 Gbps
                           <br />
-                          Buffer
+                          por fibra optica
                         </h1>
                         <h5 className="intro-absolute fw-300 text-uppercase intro_before_featured_word">
-                          Speeds Up to 1 Gbps
+                          {/* Velocidad de hasta 1 Gbps
                           <br />
-                          with Unlimited Data
+                          datos ilimitados */}
                         </h5>
                       </div>
                       <div className="intro_layer" data-animation="fadeInUp">
                         <p className="text-uppercase intro_after_featured_word">
-                          Check Testimonials
+                          Mira los testimonios
                         </p>
                       </div>
                     </div>
