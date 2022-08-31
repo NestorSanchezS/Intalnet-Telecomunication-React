@@ -1,0 +1,344 @@
+{
+    "cities": [
+        {
+            "id": 1,
+            "nombre": "Montería - Córdoba",
+            "plan": [
+                {
+                    "id": 1,
+                    "name": "Insuperable",
+                    "price": "400.000",
+                    "city_id": 1,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "500",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte Especializado",
+                            "type": "soporte"
+                        },
+                        {
+                            "id": 3,
+                            "name": "47 Canales TV",
+                            "type": "tv"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Canales HD y SD",
+                            "type": "canales"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Premium",
+                    "price": "120.000",
+                    "city_id": 1,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "120",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte Especializado",
+                            "type": "soporte"
+                        },
+                        {
+                            "id": 3,
+                            "name": "47 Canales TV",
+                            "type": "tv"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Canales HD y SD",
+                            "type": "canales"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Plus",
+                    "price": "80.000",
+                    "city_id": 1,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "80",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte Especializado",
+                            "type": "soporte"
+                        },
+                        {
+                            "id": 3,
+                            "name": "47 Canales TV",
+                            "type": "tv"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Canales HD y SD",
+                            "type": "canales"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Básico",
+                    "price": "60.000",
+                    "city_id": 1,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "40",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte Especializado",
+                            "type": "soporte"
+                        },
+                        {
+                            "id": 3,
+                            "name": "47 Canales TV",
+                            "type": "tv"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Canales HD y SD",
+                            "type": "canales"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Tierralta - Córdoba",
+            "plan": [
+                {
+                    "id": 1,
+                    "name": "Insuperable",
+                    "price": "197.000",
+                    "city_id": 2,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "40",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte Especializado",
+                            "type": "soporte"
+                        },
+                        {
+                            "id": 3,
+                            "name": "75 Canales TV",
+                            "type": "tv"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Canales HD y SD",
+                            "type": "canales"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Premium",
+                    "price": "147.000",
+                    "city_id": 2,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "30",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte Especializado",
+                            "type": "soporte"
+                        },
+                        {
+                            "id": 3,
+                            "name": "75 Canales TV",
+                            "type": "tv"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Canales HD y SD",
+                            "type": "canales"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "plus",
+                    "price": "97.000",
+                    "city_id": 2,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "20",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte Especializado",
+                            "type": "soporte"
+                        },
+                        {
+                            "id": 3,
+                            "name": "75 Canales TV",
+                            "type": "tv"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Canales HD y SD",
+                            "type": "canales"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Básico",
+                    "price": "62.000",
+                    "city_id": 2,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "10",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte Especializado",
+                            "type": "soporte"
+                        },
+                        {
+                            "id": 3,
+                            "name": "75 Canales TV",
+                            "type": "tv"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Canales HD y SD",
+                            "type": "canales"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Valencia - Córdoba",
+            "plan": [
+                {
+                    "id": 1,
+                    "name": "Plus",
+                    "price": "92.000",
+                    "city_id": 3,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "20",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte Especilizado",
+                            "type": "soporte"
+                        },
+                        {
+                            "id": 3,
+                            "name": "75 Canales TV",
+                            "type": "tv"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Canales HD y SD",
+                            "type": "canales"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Plus",
+                    "price": "67.000",
+                    "city_id": 3,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "67",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte Especilizado",
+                            "type": "soporte"
+                        },
+                        {
+                            "id": 3,
+                            "name": "75 Canales TV",
+                            "type": "tv"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Canales HD y SD",
+                            "type": "canales"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "Los Córdoba - Córdoba",
+            "plan": [
+                {
+                    "id": 1,
+                    "name": "Plus",
+                    "price": "60.000",
+                    "city_id": 4,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "5",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte 24/7",
+                            "type": "soporte"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Básico",
+                    "price": "50.000",
+                    "city_id": 4,
+                    "services": [
+                        {
+                            "id": 1,
+                            "name": "10",
+                            "type": "bandwidth"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Soporte 24/7",
+                            "type": "soporte"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+  }    

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ContactUs } from "./components/ContactUs";
+import { FrequentQuestions } from "./components/FrequentQuestions";
 import { Home } from "./components/Home";
 import { OurCompany } from "./components/OurCompany";
 import { Services } from "./components/Services";
@@ -15,6 +16,7 @@ export const App = () => {
           <Route path="ourcompany" element={<OurCompany />} />
           <Route path="services" element={<Services />} />
           <Route path="contactus" element={<ContactUs />} />
+          <Route path="questions" element={<FrequentQuestions />} />
         </Route>
       </Routes>
     </BrowserRouter>

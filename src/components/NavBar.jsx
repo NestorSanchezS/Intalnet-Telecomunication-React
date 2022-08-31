@@ -75,7 +75,7 @@ export const NavBar = () => {
                         <a>Info Usuarios</a>
                         <ul>
                           <li>
-                            <a href="blog-right.html">Preguntas Frecuentes</a>
+                            <Link to="questions">Preguntas Frecuentes</Link>
                           </li>
                           <li>
                             <a href="blog-left.html">

@@ -1,0 +1,19 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "¿Los servicios de internet y televisión son servicios esenciales?",
+            "answer": "SÍ. El MinTIC expide el Decreto 464 del 23 de marzo de 2020 declarando que los servicios de internet y televisión son esenciales (artículo 1º)."
+        },
+        {
+            "id": 2,
+            "question": "¿Los operadores de internet y televisión pueden suspender labores de instalación, mantenimiento y adecuación de las redes requeridas para la operación del servicio?",
+            "answer": "NO. En el artículo 1º del Decreto 464 del 23 de marzo de 2020 expedido por el MinTIC se establece que los PRST “…no podrán suspender las labores de instalación, mantenimiento y adecuación de las redes requeridas para la operación del servicio.” "
+        },
+        {
+            "id": 3,
+            "question": "¿Como estas?",
+            "answer": "bien gracias"
+        }
+    ]
+}

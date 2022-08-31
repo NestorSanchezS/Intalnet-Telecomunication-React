@@ -4,5 +4,3 @@ export const SERVICES = [
   { id: 3, name: "Camaras Seguridad" },
   { id: 4, name: "Deseo accesorio tecnologico" },
 ];
-
-export const PACKAGE = [];

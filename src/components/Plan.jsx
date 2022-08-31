@@ -6,7 +6,7 @@ import plan01 from "../assets/images/price-icon03.png";
 export const Plan = () => {
   return (
     <>
-      <div className="row c-gutter-60">
+      <div className="row c-gutter-60 container-card">
         <div className="col-lg-4 col-12">
           <div className="pricing-plan hero-bg rounded">
             <div className="plan-name text-uppercase bg-maincolor">
@@ -133,7 +133,7 @@ export const Plan = () => {
             </div>
             <div className="plan-features">
               <ul className="list-bordered">
-                <li>Sorporte 24/7</li>
+                <li>Sorporte Especializado</li>
                 <li>47 Canales TV</li>
                 <li>Canales HD y SD</li>
               </ul>
