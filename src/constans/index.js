@@ -5,4 +5,4 @@ export const SERVICES = [
   { id: 4, name: "Deseo accesorio tecnologico" },
 ];
 
-// export const PACKAGE
+export const PACKAGE = [];

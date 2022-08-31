@@ -31,7 +31,7 @@ export const Services = () => {
           <div className="row">
             <div className="col-lg-8 offset-lg-2" id="price">
               <h5 className="special-heading text-center">Escoge</h5>
-              <h1 className="text-center mt-2">Paquete</h1>
+              <h1 className="text-center mt-2">Plan</h1>
               <p class="text-center big ">
                 Prepárese para más potencial, más oportunidades y más de todo lo
                 que espera del proveedor de Internet.

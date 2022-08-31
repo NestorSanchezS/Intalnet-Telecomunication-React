@@ -2,10 +2,17 @@ import React, { createContext, useState } from "react";
 
 export const IntalnetContext = createContext();
 export const IntalnetProvider = ({ children }) => {
-  const [dataFormContactus, setDataFormContactus] = useState({});
+  const [dataFormContactus, setDataFormContactus] = useState({
+    service: "",
+    address: "",
+    name: "",
+    phone: "",
+    email: "",
+    Message: "",
+  });
   return (
-    <intalnetContext.Provider value={{ dataFormContactus }}>
+    <IntalnetContext.Provider value={{ dataFormContactus }}>
       {children}
-    </intalnetContext.Provider>
+    </IntalnetContext.Provider>
   );
 };
