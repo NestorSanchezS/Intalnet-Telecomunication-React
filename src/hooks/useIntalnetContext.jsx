@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { IntalnetContext } from "../context/intalnetProvider";
 
-export const useIntalnet = () => {
+export const useIntalnetContext = () => {
   return useContext(IntalnetContext);
 };

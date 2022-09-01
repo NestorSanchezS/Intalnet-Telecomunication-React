@@ -1,19 +1,9 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
+import { useIntalnetContext } from "../hooks/useIntalnetContext";
 
 export const FrequentQuestions = () => {
-  useLayoutEffect(() => {
-    try {
-      const callApiQuestions = async () => {
-        const url = "http://localhost:5000/questions";
-        const response = await fetch(url);
-        const data = await response.json();
-        console.log(data);
-      };
-      callApiQuestions();
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
+  const { getQuestions } = useIntalnetContext();
+
   return (
     <>
       <section className="page_title cs s-pt-60 s-pb-10 s-pt-lg-130 s-pb-lg-60 page_title text-center">
@@ -34,7 +24,6 @@ export const FrequentQuestions = () => {
         <div className="container">
           <div className="row">
             <div className="d-none d-lg-block divider-50"></div>
-
             <main className="col-lg-12 col-xl-12">
               <div className="d-none d-lg-block divider-30"></div>
               <div className="row">

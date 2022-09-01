@@ -8,8 +8,6 @@ import { IntalnetProvider } from "./context/IntalnetProvider";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <IntalnetProvider>
-      <App />
-    </IntalnetProvider>
+    <App />
   </React.StrictMode>
 );
