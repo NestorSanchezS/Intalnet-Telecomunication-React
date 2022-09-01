@@ -12,8 +12,48 @@
         },
         {
             "id": 3,
-            "question": "¿Como estas?",
-            "answer": "bien gracias"
+            "question": "¿Siendo los servicios de internet y televisión esenciales deben ser prestados por los operadores gratuitamente?",
+            "answer": "NO. La normatividad de emergencia no suspende lo dispuesto en el Artículo 2.1.12.1 del Capítulo 1 del Título II de la Resolución CRC 5050 de 2016. Así las cosas, los Usuarios están obligados a pagar oportunamente la factura por la prestación de los servicios de interne televisión por suscripción."
+        },
+        {
+            "id": 4,
+            "question": "¿Los operadores pueden cortar la prestación de los servicios de internet y televisión por falta de pago?",
+            "answer": "SÍ. La CRC mediante la Resolución No. 5951 del 26 de marzo de 2020 dispone que los usuarios de televisión por suscripción e internet tienen la obligación de pagar oportunamente la factura. Ahora bien, bajo la premisa que son servicios esenciales esta Comisión exhorta a los operadores a que les brinden a los Usuarios facilidades de pago."
+        },
+        {
+            "id": 5,
+            "question": "¿Los operadores de internet y televisión pueden cortar la prestación de los servicios cuando pese a las facilidades de pago los Usuarios se niegan a pagar?",
+            "answer": "LLa Resolución CRC No. 5951 del 26 de marzo de 2020 no releva a los Usuarios de la obligación de pago oportuno. INTALNET TELECOMUNICACIONES (Inversiones Zuluaga Sejin S.A.S) avisará a los Usuarios los cortes del servicio que realizará por falta de pago."
+        },
+        {
+            "id": 6,
+            "question": "¿Los operadores de internet y televisión están obligados a condonar las deudas de los usuarios?",
+            "answer": " NO. En el artículo 4 de la Resolución CRC No. 5951 del 26 de marzo de 2020 se establece que durante el término que perdure la emergencia no podemos cobrar intereses por mora. Lo anterior no implica condonaciones de las sumas que los usuarios deben."
+        },
+        {
+            "id": 7,
+            "question": "¿La facturación y las respuestas a las PQRs pueden ser enviadas al correo electrónico del Usuario?",
+            "answer": "SÍ. La Resolución CRC No. 5956 del 19 de marzo de 2020 permite que el operador emita la respuesta a la PQRs por correo electrónico, aunque no haya sido el mismo medio por el que se presentó o el Usuario no lo haya autorizado expresamente. Esta misma norma faculta al operador a enviar la factura por correo electrónico aun cuando el Usuario no lo haya autorizado. Si no se cuenta con el correo electrónico INTALNET TELECOMUNICACIONES (Inversiones Zuluaga Sejin S.A.S) entregará la factura y la respuesta de la PQRs en físico."
+        },
+        {
+            "id": 8,
+            "question": "¿En caso de que el Usuario tenga inconvenientes con la prestación de sus servicios (televisión y/o internet) primero debe acudir a la Superintendencia de Industria y Comercio – SIC?",
+            "answer": "NO. La Resolución SIC No. 19012 de 2020 enfatiza que INTALNET TELECOMUNICACIONES (Inversiones Zuluaga Sejin S.A.S) es el primer canal de solución. Ahora bien, solo en el caso que no demos respuesta oportunamente el Usuario podrá acudir a la SIC."
+        },
+        {
+            "id": 9,
+            "question": "¿Qué es ancho de banda?<",
+            "answer": "Dicho de forma muy simple, el ancho de banda es el caudal o capacidad de transmisión de datos que soporta un enlace. Suele ser un recurso compartido por numerosos usuarios (por ejemplo, todos los usuarios de un determinado proveedor)."
+        },
+        {
+            "id": 10,
+            "question": "¿Qué es conexión WIFI?",
+            "answer": "Wifi o Wi-Fi es originalmente una abreviación de la marca comercial Wireless Fidelity, que en inglés significa 'fidelidad sin cables o inalámbrica'. La comunicación inalámbrica, como tal, es aquella que prescinde de cables o medios físicos visibles de propagación, y que, por el contrario, emplea ondas electromagnéticas para su trasmisión, siendo que esta, no obstante, estará limitada a un radio específico de cobertura."
+        },
+        {
+            "id": 11,
+            "question": "¿Qué es una mega?",
+            "answer": "Un router es un dispositivo de red que se encarga de llevar por la ruta adecuada el tráfico. En tu casa seguramente tendrás uno que es el que te conecta con Internet. Los routers funcionan utilizando direcciones IP para saber a donde tienen que ir los paquetes de datos cuando se compra el servicio."
         }
     ]
 }

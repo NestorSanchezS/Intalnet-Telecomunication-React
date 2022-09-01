@@ -310,7 +310,7 @@
                     "services": [
                         {
                             "id": 1,
-                            "name": "5",
+                            "name": "10",
                             "type": "bandwidth"
                         },
                         {
@@ -328,7 +328,7 @@
                     "services": [
                         {
                             "id": 1,
-                            "name": "10",
+                            "name": "5",
                             "type": "bandwidth"
                         },
                         {

@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 
 export const FrequentQuestions = () => {
+  useLayoutEffect(() => {
+    try {
+      const callApiQuestions = async () => {
+        const url = "http://localhost:5000/questions";
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log(data);
+      };
+      callApiQuestions();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
   return (
     <>
       <section className="page_title cs s-pt-60 s-pb-10 s-pt-lg-130 s-pb-lg-60 page_title text-center">
@@ -26,24 +39,24 @@ export const FrequentQuestions = () => {
               <div className="d-none d-lg-block divider-30"></div>
               <div className="row">
                 <div className="col-xl-6">
-                  <h5>
+                  <h4>
                     ¿Los servicios de internet y televisión son servicios
                     esenciales?
-                  </h5>
+                  </h4>
                   <p>
                     SÍ. El MinTIC expide el Decreto 464 del 23 de marzo de 2020
                     declarando que los servicios de internet y televisión son
-                    esenciales (artículo 1º)
+                    esenciales (artículo 1º).
                   </p>
                 </div>
                 <div className="col-xl-6">
-                  <h5>
+                  <h4>
                     ¿Los operadores de internet y televisión pueden suspender
                     labores de instalación, mantenimiento y adecuación de las
                     redes requeridas para la operación del servicio?
-                  </h5>
+                  </h4>
                   <p>
-                    LorNO. En el artículo 1º del Decreto 464 del 23 de marzo de
+                    NO. En el artículo 1º del Decreto 464 del 23 de marzo de
                     2020 expedido por el MinTIC se establece que los PRST “…no
                     podrán suspender las labores de instalación, mantenimiento y
                     adecuación de las redes requeridas para la operación del
@@ -54,10 +67,10 @@ export const FrequentQuestions = () => {
               <div className="d-none d-lg-block divider-30"></div>
               <div className="row">
                 <div className="col-xl-4">
-                  <h5>
+                  <h4>
                     ¿Siendo los servicios de internet y televisión esenciales
                     deben ser prestados por los operadores gratuitamente?
-                  </h5>
+                  </h4>
                   <p>
                     NO. La normatividad de emergencia no suspende lo dispuesto
                     en el Artículo 2.1.12.1 del Capítulo 1 del Título II de la
@@ -68,10 +81,10 @@ export const FrequentQuestions = () => {
                   </p>
                 </div>
                 <div className="col-xl-4">
-                  <h5>
+                  <h4>
                     ¿Los operadores pueden cortar la prestación de los servicios
                     de internet y televisión por falta de pago?
-                  </h5>
+                  </h4>
                   <p>
                     SÍ. La CRC mediante la Resolución No. 5951 del 26 de marzo
                     de 2020 dispone que los usuarios de televisión por
@@ -83,11 +96,11 @@ export const FrequentQuestions = () => {
                   </p>
                 </div>
                 <div className="col-xl-4">
-                  <h5>
+                  <h4>
                     ¿Los operadores de internet y televisión pueden cortar la
                     prestación de los servicios cuando pese a las facilidades de
                     pago los Usuarios se niegan a pagar?
-                  </h5>
+                  </h4>
                   <p>
                     LLa Resolución CRC No. 5951 del 26 de marzo de 2020 no
                     releva a los Usuarios de la obligación de pago oportuno.
@@ -99,10 +112,10 @@ export const FrequentQuestions = () => {
               </div>
               <div className="row">
                 <div className="col-xl-4">
-                  <h5>
+                  <h4>
                     ¿Los operadores de internet y televisión están obligados a
                     condonar las deudas de los usuarios?
-                  </h5>
+                  </h4>
                   <p>
                     NO. En el artículo 4 de la Resolución CRC No. 5951 del 26 de
                     marzo de 2020 se establece que durante el término que
@@ -112,10 +125,10 @@ export const FrequentQuestions = () => {
                   </p>
                 </div>
                 <div className="col-xl-4">
-                  <h5>
+                  <h4>
                     ¿La facturación y las respuestas a las PQRs pueden ser
                     enviadas al correo electrónico del Usuario?
-                  </h5>
+                  </h4>
                   <p>
                     SÍ. La Resolución CRC No. 5956 del 19 de marzo de 2020
                     permite que el operador emita la respuesta a la PQRs por
@@ -130,12 +143,12 @@ export const FrequentQuestions = () => {
                   </p>
                 </div>
                 <div className="col-xl-4">
-                  <h5>
+                  <h4>
                     ¿En caso de que el Usuario tenga inconvenientes con la
                     prestación de sus servicios (televisión y/o internet)
                     primero debe acudir a la Superintendencia de Industria y
                     Comercio – SIC?
-                  </h5>
+                  </h4>
                   <p>
                     NO. La Resolución SIC No. 19012 de 2020 enfatiza que
                     INTALNET TELECOMUNICACIONES (Inversiones Zuluaga Sejin
@@ -146,8 +159,8 @@ export const FrequentQuestions = () => {
                 </div>
               </div>
               <div className="row">
-                <div class="col-xl-4">
-                  <h5>¿Qué es ancho de banda?</h5>
+                <div className="col-xl-4">
+                  <h4>¿Qué es ancho de banda?</h4>
                   <p>
                     Dicho de forma muy simple, el ancho de banda es el caudal o
                     capacidad de transmisión de datos que soporta un enlace.
@@ -155,8 +168,8 @@ export const FrequentQuestions = () => {
                     ejemplo, todos los usuarios de un determinado proveedor).
                   </p>
                 </div>
-                <div class="col-xl-4">
-                  <h5>¿Qué es conexión WIFI?</h5>
+                <div className="col-xl-4">
+                  <h4>¿Qué es conexión WIFI?</h4>
                   <p>
                     Wifi o Wi-Fi es originalmente una abreviación de la marca
                     comercial Wireless Fidelity, que en inglés significa
@@ -169,7 +182,7 @@ export const FrequentQuestions = () => {
                   </p>
                 </div>
                 <div className="col-xl-4">
-                  <h5>¿Qué es una mega?</h5>
+                  <h4>¿Qué es una mega?</h4>
                   <p>
                     Un router es un dispositivo de red que se encarga de llevar
                     por la ruta adecuada el tráfico. En tu casa seguramente
@@ -182,7 +195,7 @@ export const FrequentQuestions = () => {
               </div>
             </main>
 
-            <div class="d-none d-lg-block divider-50"></div>
+            <div className="d-none d-lg-block divider-50"></div>
           </div>
         </div>
       </section>
