@@ -42,7 +42,7 @@
         },
         {
             "id": 9,
-            "question": "¿Qué es ancho de banda?<",
+            "question": "¿Qué es ancho de banda?",
             "answer": "Dicho de forma muy simple, el ancho de banda es el caudal o capacidad de transmisión de datos que soporta un enlace. Suele ser un recurso compartido por numerosos usuarios (por ejemplo, todos los usuarios de un determinado proveedor)."
         },
         {
@@ -53,6 +53,11 @@
         {
             "id": 11,
             "question": "¿Qué es una mega?",
+            "answer": "Un router es un dispositivo de red que se encarga de llevar por la ruta adecuada el tráfico. En tu casa seguramente tendrás uno que es el que te conecta con Internet. Los routers funcionan utilizando direcciones IP para saber a donde tienen que ir los paquetes de datos cuando se compra el servicio."
+        },
+        {
+            "id": 12,
+            "question": "¿Qué es un router?",
             "answer": "Un router es un dispositivo de red que se encarga de llevar por la ruta adecuada el tráfico. En tu casa seguramente tendrás uno que es el que te conecta con Internet. Los routers funcionan utilizando direcciones IP para saber a donde tienen que ir los paquetes de datos cuando se compra el servicio."
         }
     ]
