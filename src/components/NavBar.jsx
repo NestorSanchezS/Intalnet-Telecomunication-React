@@ -38,7 +38,7 @@ export const NavBar = () => {
                             <a>Planes por sedes</a>
                             <ul>
                               <li>
-                                <Link to="/services">Montería Córdoba</Link>
+                                <Link to="/monteria">Montería Córdoba</Link>
                               </li>
                               <li>
                                 <Link to="/services">Tierralta Córdoba</Link>

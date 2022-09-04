@@ -9,6 +9,9 @@
                     "name": "Insuperable",
                     "price": "400.000",
                     "city_id": 1,
+                    "ui_params" : {
+                        "background-image": "linear-gradient(to right, #231955 0%, #1F4690 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,
@@ -37,6 +40,9 @@
                     "name": "Premium",
                     "price": "120.000",
                     "city_id": 1,
+                    "ui_params" : {
+                        "background-image": "llinear-gradient(to right, #003865 0%, #F66B0E 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,
@@ -65,6 +71,9 @@
                     "name": "Plus",
                     "price": "80.000",
                     "city_id": 1,
+                    "ui_params" : {
+                        "background-image" : "linear-gradient(to right, #E04D01 0%, #FF7700 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,
@@ -93,6 +102,9 @@
                     "name": "Básico",
                     "price": "60.000",
                     "city_id": 1,
+                    "ui_params" : {
+                        "background-image" : "linear-gradient(to right, #E04D01 0%, #FFB562 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,
@@ -127,6 +139,9 @@
                     "name": "Insuperable",
                     "price": "197.000",
                     "city_id": 2,
+                    "ui_params" : {
+                        "background-image": "linear-gradient(to right, #231955 0%, #1F4690 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,
@@ -155,6 +170,9 @@
                     "name": "Premium",
                     "price": "147.000",
                     "city_id": 2,
+                    "ui_params" : {
+                        "background-image": "llinear-gradient(to right, #003865 0%, #F66B0E 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,
@@ -183,6 +201,9 @@
                     "name": "plus",
                     "price": "97.000",
                     "city_id": 2,
+                    "ui_params" : {
+                        "background-image" : "linear-gradient(to right, #E04D01 0%, #FF7700 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,
@@ -211,6 +232,9 @@
                     "name": "Básico",
                     "price": "62.000",
                     "city_id": 2,
+                    "ui_params" : {
+                        "background-image" : "linear-gradient(to right, #E04D01 0%, #FFB562 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,
@@ -245,6 +269,9 @@
                     "name": "Plus",
                     "price": "92.000",
                     "city_id": 3,
+                    "ui_params" : {
+                        "background-image" : "linear-gradient(to right, #E04D01 0%, #FF7700 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,
@@ -270,9 +297,12 @@
                 },
                 {
                     "id": 2,
-                    "name": "Plus",
+                    "name": "Básico",
                     "price": "67.000",
                     "city_id": 3,
+                    "ui_params" : {
+                        "background-image" : "linear-gradient(to right, #E04D01 0%, #FFB562 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,
@@ -307,6 +337,9 @@
                     "name": "Plus",
                     "price": "60.000",
                     "city_id": 4,
+                    "ui_params" : {
+                        "background-image" : "linear-gradient(to right, #E04D01 0%, #FF7700 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,
@@ -325,6 +358,9 @@
                     "name": "Básico",
                     "price": "50.000",
                     "city_id": 4,
+                    "ui_params" : {
+                        "background-image" : "linear-gradient(to right, #E04D01 0%, #FFB562 100%);"
+                    },
                     "services": [
                         {
                             "id": 1,

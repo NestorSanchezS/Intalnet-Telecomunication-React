@@ -4,7 +4,7 @@ import { ContactUs } from "./components/ContactUs";
 import { FrequentQuestions } from "./components/FrequentQuestions";
 import { Home } from "./components/Home";
 import { OurCompany } from "./components/OurCompany";
-import { Services } from "./components/Services";
+import { Monteria } from "./components/Monteria";
 import { IntalnetProvider } from "./context/intalnetProvider";
 import { Layout } from "./layout/Layout";
 
@@ -16,7 +16,7 @@ export const App = () => {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="ourcompany" element={<OurCompany />} />
-            <Route path="services" element={<Services />} />
+            <Route path="monteria" element={<Monteria />} />
             <Route path="contactus" element={<ContactUs />} />
             <Route path="frequentquestions" element={<FrequentQuestions />} />
           </Route>

@@ -10,7 +10,7 @@ export const Plan = () => {
         <div className="col-lg-4 col-12">
           <div className="pricing-plan hero-bg rounded">
             <div className="plan-name text-uppercase bg-maincolor">
-              <h3>Premium</h3>
+              <h3>Insuperable</h3>
             </div>
             <div className="plan-desc">
               <div className="plan-content">
@@ -48,7 +48,7 @@ export const Plan = () => {
               <span className="plan-decimals small-text"></span>
             </div>
             <div className="plan-button">
-              <a href="#" class="btn btn-maincolor">
+              <a href="#" className="btn btn-maincolor">
                 <span>Lo quiero!</span>
               </a>
             </div>
@@ -58,7 +58,7 @@ export const Plan = () => {
         <div className="col-lg-4 col-12">
           <div className="pricing-plan hero-bg rounded">
             <div className="plan-name text-uppercase bg-maincolor2">
-              <h3>Plus</h3>
+              <h3>Premium</h3>
             </div>
             <div className="plan-desc">
               <div className="plan-content">
@@ -106,11 +106,11 @@ export const Plan = () => {
         <div className="col-lg-4 col-12">
           <div className="pricing-plan hero-bg rounded">
             <div className="plan-name text-uppercase bg-maincolor3">
-              <h3>Básico</h3>
+              <h3>Plus</h3>
             </div>
             <div className="plan-desc">
               <div className="plan-content">
-                <h4 clasName="color-main5">40</h4>
+                <h4 className="color-main5">40</h4>
                 <p className="small-text">
                   <i
                     className="color-main5 fa fa-angle-down"
@@ -145,6 +145,53 @@ export const Plan = () => {
             </div>
             <div className="plan-button">
               <a href="#" className="btn btn-maincolor3">
+                <span>Lo Quiero!</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4 col-12 mt-4">
+          <div className="pricing-plan hero-bg rounded">
+            <div className="plan-name text-uppercase bg-maincolor4">
+              <h3>Básico</h3>
+            </div>
+            <div className="plan-desc">
+              <div className="plan-content">
+                <h4 className="color-main5">40</h4>
+                <p className="small-text">
+                  <i
+                    className="color-main5 fa fa-angle-down"
+                    aria-hidden="true"
+                  ></i>
+                  mb/s
+                </p>
+                <h4 className="color-main6">40</h4>
+                <p className="small-text">
+                  <i
+                    className="color-main6 fa fa-angle-up"
+                    aria-hidden="true"
+                  ></i>
+                  mb/s
+                </p>
+              </div>
+              <div className="price-icon">
+                <img src={plan01} alt="" />
+              </div>
+            </div>
+            <div className="plan-features">
+              <ul className="list-bordered">
+                <li>Sorporte Especializado</li>
+                <li>47 Canales TV</li>
+                <li>Canales HD y SD</li>
+              </ul>
+            </div>
+            <div className="price-wrap d-flex">
+              <span className="plan-sign small-text">$</span>
+              <span className="plan-price color-main5">60.000</span>
+              <span className="plan-decimals small-text"></span>
+            </div>
+            <div className="plan-button">
+              <a href="#" className="btn btn-maincolor4">
                 <span>Lo Quiero!</span>
               </a>
             </div>

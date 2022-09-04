@@ -7972,20 +7972,25 @@ body.boxed {
 
 .btn-maincolor,
 .btn-maincolor:not(:disabled):not(.disabled):active {
-	background-image: -webkit-linear-gradient(left, #5b83cd 0%, #c280bf 100%);
-	background-image: linear-gradient(to right, #5b83cd 0%, #c280bf 100%);
+	/* background-image: -webkit-linear-gradient(left, #c280bf 0%, #c280bf 100%); */
+	background-image: linear-gradient(to right, #231955 0%, #1F4690 100%);
 }
 
 .btn-maincolor2,
 .btn-maincolor2:not(:disabled):not(.disabled):active {
-	background-image: -webkit-linear-gradient(left, #2165a9 0%, #3197d4 100%);
-	background-image: linear-gradient(to right, #2165a9 0%, #3197d4 100%);
+	/* background-image: -webkit-linear-gradient(left, #2165a9 0%, #3197d4 100%); */
+	background-image: linear-gradient(to right, #003865 0%, #F66B0E 100%);
 }
 
 .btn-maincolor3,
 .btn-maincolor3:not(:disabled):not(.disabled):active {
-	background-image: -webkit-linear-gradient(left, #208291 0%, #32b9c2 100%);
-	background-image: linear-gradient(to right, #208291 0%, #32b9c2 100%);
+	/* background-image: -webkit-linear-gradient(left, #208291 0%, #32b9c2 100%); */
+	background-image: linear-gradient(to right, #E04D01 0%, #FF7700 100%);
+}
+.btn-maincolor4,
+.btn-maincolor4:not(:disabled):not(.disabled):active {
+	/* background-image: -webkit-linear-gradient(left, #208291 0%, #32b9c2 100%); */
+	background-image: linear-gradient(to right, #E04D01 0%, #FFB562 100%);
 }
 
 .btn-outline-maincolor:hover span,
@@ -9678,18 +9683,22 @@ body.boxed {
 }
 
 .bg-maincolor {
-	background-image: -webkit-linear-gradient(left, #5b83cd 0%, #c280bf 100%);
-	background-image: linear-gradient(to right, #5b83cd 0%, #c280bf 100%);
+	/* background-image: -webkit-linear-gradient(left, #5b83cd 0%, #c280bf 100%); */
+	background-image: linear-gradient(to right, #231955 0%, #1F4690 100%);
 }
 
 .bg-maincolor2 {
-	background-image: -webkit-linear-gradient(left, #2165a9 0%, #3197d4 100%);
-	background-image: linear-gradient(to right, #2165a9 0%, #3197d4 100%);
+	/* background-image: -webkit-linear-gradient(left, #2165a9 0%, #3197d4 100%); */
+	background-image: linear-gradient(to right, #003865 0%, #F66B0E 100%);
 }
 
 .bg-maincolor3 {
-	background-image: -webkit-linear-gradient(left, #208291 0%, #32b9c2 100%);
-	background-image: linear-gradient(to right, #208291 0%, #32b9c2 100%);
+	/* background-image: -webkit-linear-gradient(left, #208291 0%, #32b9c2 100%); */
+	background-image: linear-gradient(to right, #E04D01 0%, #FF7700 100%);
+}
+.bg-maincolor4 {
+	/* background-image: -webkit-linear-gradient(left, #208291 0%, #32b9c2 100%); */
+	background-image: linear-gradient(to right, #E04D01 0%, #FFB562 100%);
 }
 
 .bg-dark {
