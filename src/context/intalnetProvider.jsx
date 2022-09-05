@@ -28,6 +28,7 @@ export const IntalnetProvider = ({ children }) => {
       console.log(error);
     }
   }, []);
+
   return (
     <IntalnetContext.Provider value={{ dataFormContactus, getQuestions }}>
       {children}

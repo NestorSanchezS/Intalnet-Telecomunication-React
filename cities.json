@@ -10,7 +10,7 @@
                     "price": "400.000",
                     "city_id": 1,
                     "ui_params" : {
-                        "background-image": "linear-gradient(to right, #231955 0%, #1F4690 100%);"
+                        "backgroundImage": "linear-gradient(to right, #231955 0%, #1F4690 100%);"
                     },
                     "services": [
                         {
@@ -41,7 +41,7 @@
                     "price": "120.000",
                     "city_id": 1,
                     "ui_params" : {
-                        "background-image": "llinear-gradient(to right, #003865 0%, #F66B0E 100%);"
+                        "backgroundImage": "linear-gradient(to right, #003865 0%, #F66B0E 100%);"
                     },
                     "services": [
                         {
@@ -72,7 +72,7 @@
                     "price": "80.000",
                     "city_id": 1,
                     "ui_params" : {
-                        "background-image" : "linear-gradient(to right, #E04D01 0%, #FF7700 100%);"
+                        "backgroundImage" : "linear-gradient(to right, #E04D01 0%, #FF7700 100%);"
                     },
                     "services": [
                         {
@@ -103,7 +103,7 @@
                     "price": "60.000",
                     "city_id": 1,
                     "ui_params" : {
-                        "background-image" : "linear-gradient(to right, #E04D01 0%, #FFB562 100%);"
+                        "backgroundImage" : "linear-gradient(to right, #E04D01 0%, #FFB562 100%);"
                     },
                     "services": [
                         {
@@ -171,7 +171,7 @@
                     "price": "147.000",
                     "city_id": 2,
                     "ui_params" : {
-                        "background-image": "llinear-gradient(to right, #003865 0%, #F66B0E 100%);"
+                        "background-image": "linear-gradient(to right, #003865 0%, #F66B0E 100%);"
                     },
                     "services": [
                         {

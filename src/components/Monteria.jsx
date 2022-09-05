@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Plan } from "./Plan";
 
 export const Monteria = () => {
+  const [planMonteria, setPlanMonteria] = useState([]);
+  useEffect(() => {
+    try {
+      const getServerPlansMonteria = async () => {
+        const url = "http://localhost:4000/cities/1";
+        const responseMonteria = await fetch(url);
+        const dataMonteria = await responseMonteria.json();
+        setPlanMonteria(dataMonteria);
+      };
+      getServerPlansMonteria();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+  const { plan } = planMonteria;
+  console.log(plan);
+
   return (
     <>
       <section className="page_title cs s-pt-60 s-pb-10 s-pt-lg-130 s-pb-lg-60 page_title text-center">
@@ -31,7 +48,7 @@ export const Monteria = () => {
             </div>
           </div>
           <div className="divider-45 d-none d-lg-block"></div>
-          <Plan />
+          {plan && plan.map((plane) => <Plan key={plane.id} plane={plane} />)}
         </div>
       </section>
     </>

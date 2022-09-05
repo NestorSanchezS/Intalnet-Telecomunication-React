@@ -3,18 +3,21 @@ import plan03 from "../assets/images/price-icon01.png";
 import plan02 from "../assets/images/price-icon02.png";
 import plan01 from "../assets/images/price-icon03.png";
 
-export const Plan = () => {
+export const Plan = ({ plane }) => {
+  const { name, price, ui_params, services } = plane;
+  console.log(ui_params);
+
   return (
     <>
       <div className="row c-gutter-60 container-card">
         <div className="col-lg-4 col-12">
           <div className="pricing-plan hero-bg rounded">
-            <div className="plan-name text-uppercase bg-maincolor">
-              <h3>Insuperable</h3>
+            <div className={`plan-name text-uppercase ${ui_params}`}>
+              <h3>{name}</h3>
             </div>
             <div className="plan-desc">
               <div className="plan-content">
-                <h4 className="color-main">120</h4>
+                <h4 className="color-main">{services.name}</h4>
                 <p className="small-text text-left">
                   <i
                     className="color-main fa fa-angle-down"
@@ -22,7 +25,7 @@ export const Plan = () => {
                   ></i>
                   mb/s
                 </p>
-                <h4 className="color-main2">120</h4>
+                <h4 className="color-main2">50</h4>
                 <p className="small-text text-left">
                   <i
                     className="color-main2 fa fa-angle-up"
@@ -44,7 +47,7 @@ export const Plan = () => {
             </div>
             <div className="price-wrap d-flex">
               <span className="plan-sign small-text">$</span>
-              <span className="plan-price color-main2">120.000</span>
+              <span className="plan-price color-main2">{price}</span>
               <span className="plan-decimals small-text"></span>
             </div>
             <div className="plan-button">
@@ -55,7 +58,7 @@ export const Plan = () => {
           </div>
           <div className="divider-45 d-block d-lg-none"></div>
         </div>
-        <div className="col-lg-4 col-12">
+        {/* <div className="col-lg-4 col-12">
           <div className="pricing-plan hero-bg rounded">
             <div className="plan-name text-uppercase bg-maincolor2">
               <h3>Premium</h3>
@@ -196,7 +199,7 @@ export const Plan = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
