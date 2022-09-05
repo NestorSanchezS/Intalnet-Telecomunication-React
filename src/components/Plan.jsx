@@ -17,7 +17,7 @@ export const Plan = ({ plane }) => {
             </div>
             <div className="plan-desc">
               <div className="plan-content">
-                <h4 className="color-main">{services.name}</h4>
+                <h4 className="color-main">50</h4>
                 <p className="small-text text-left">
                   <i
                     className="color-main fa fa-angle-down"

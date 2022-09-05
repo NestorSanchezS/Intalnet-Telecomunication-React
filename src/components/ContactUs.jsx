@@ -1,32 +1,12 @@
 import React from "react";
 import { SERVICES } from "../constans";
 import { useIntalnetContext } from "../hooks/useIntalnetContext";
+import { HeaderPage } from "./HeaderPage";
 
 export const ContactUs = () => {
   return (
     <>
-      <section className="page_title cs s-pt-60 s-pb-10 s-pt-lg-130 s-pb-lg-60 page_title text-center">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="divider-60"></div>
-
-            <div className="col-md-12 text-center">
-              <h1>Contactenos</h1>
-            </div>
-
-            <div className="divider-50"></div>
-          </div>
-        </div>
-        <ol className="breadcrumb full-width">
-          {/* <li class="breadcrumb-item">
-            <a href="./">Home</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#">Pages</a>
-          </li>
-          <li class="breadcrumb-item active">Contact 4</li> */}
-        </ol>
-      </section>
+      <HeaderPage message="Contactenos" />
       <section className="ls s-py-80 s-py-lg-120 s-py-xl-160 c-gutter-100 booking-form container-px-30">
         <div className="container">
           <div className="row">

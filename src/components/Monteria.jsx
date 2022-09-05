@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { HeaderPage } from "./HeaderPage";
 import { Plan } from "./Plan";
 
 export const Monteria = () => {
@@ -16,25 +17,12 @@ export const Monteria = () => {
       console.log(error);
     }
   }, []);
-  const { plan } = planMonteria;
+  const { plan, name } = planMonteria;
   console.log(plan);
 
   return (
     <>
-      <section className="page_title cs s-pt-60 s-pb-10 s-pt-lg-130 s-pb-lg-60 page_title text-center">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="divider-60"></div>
-
-            <div className="col-md-12 text-center">
-              <h1>Montería - Córdoba</h1>
-            </div>
-
-            <div className="divider-50"></div>
-          </div>
-        </div>
-        <ol className="breadcrumb full-width"></ol>
-      </section>
+      <HeaderPage message={name} />
       <section className="s-py-80 s-py-lg-120 s-py-xl-160 ls ms">
         <div className="container">
           <div className="row">

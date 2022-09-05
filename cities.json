@@ -2,7 +2,7 @@
     "cities": [
         {
             "id": 1,
-            "nombre": "Montería - Córdoba",
+            "name": "Montería - Córdoba",
             "plan": [
                 {
                     "id": 1,
@@ -132,7 +132,7 @@
         },
         {
             "id": 2,
-            "nombre": "Tierralta - Córdoba",
+            "name": "Tierralta - Córdoba",
             "plan": [
                 {
                     "id": 1,
@@ -262,7 +262,7 @@
         },
         {
             "id": 3,
-            "nombre": "Valencia - Córdoba",
+            "name": "Valencia - Córdoba",
             "plan": [
                 {
                     "id": 1,
@@ -330,7 +330,7 @@
         },
         {
             "id": 4,
-            "nombre": "Los Córdoba - Córdoba",
+            "name": "Los Córdoba - Córdoba",
             "plan": [
                 {
                     "id": 1,
