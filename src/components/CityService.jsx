@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { HeaderPage } from "./HeaderPage";
 import { Plan } from "./Plan";
 
-export const Monteria = () => {
+export const CityService = () => {
   const [planMonteria, setPlanMonteria] = useState([]);
   useEffect(() => {
     try {
       const getServerPlansMonteria = async () => {
-        const url = "http://localhost:3300/api/v1/cities";
+        const url = `http://localhost:3300/api/v1/cities`;
         const responseMonteria = await fetch(url);
         const dataMonteria = await responseMonteria.json();
         setPlanMonteria(dataMonteria);
@@ -17,9 +17,7 @@ export const Monteria = () => {
       console.log(error);
     }
   }, []);
-  console.log(planMonteria);
   const { plan, name } = planMonteria;
-
   return (
     <>
       <HeaderPage message={name} />

@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import messenger from "../assets/images/messeger.png";
 import intalnet from "../assets/INTALNET-TELECOMUNICACIONES.png";
+import { LinkCity } from "./LinkCity";
 
 export const NavBar = () => {
+  const [dataCity, setDataCity] = useState([]);
+  useEffect(() => {
+    try {
+      const getApiCity = async () => {
+        const url = "http://localhost:3300/api/v1/cities";
+        const response = await fetch(url);
+        const data = await response.json();
+        setDataCity(data);
+      };
+      getApiCity();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
   return (
     <>
       {/* nav completo */}
@@ -37,20 +54,9 @@ export const NavBar = () => {
                           <li>
                             <a>Planes por sedes</a>
                             <ul>
-                              <li>
-                                <Link to="/monteria">Montería Córdoba</Link>
-                              </li>
-                              <li>
-                                <Link to="/services">Tierralta Córdoba</Link>
-                              </li>
-                              <li>
-                                <Link to="/services">Valencia Córdoba</Link>
-                              </li>
-                              <li>
-                                <Link to="/services">
-                                  Los Córodoba, Córdoba
-                                </Link>
-                              </li>
+                              {dataCity.map((city) => (
+                                <LinkCity key={city.id} city={city} />
+                              ))}
                             </ul>
                           </li>
 
