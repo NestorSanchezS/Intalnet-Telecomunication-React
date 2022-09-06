@@ -1,23 +1,25 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { HeaderPage } from "./HeaderPage";
 import { Plan } from "./Plan";
 
 export const CityService = () => {
-  const [planMonteria, setPlanMonteria] = useState([]);
+  const { id } = useParams();
+  const [infoCity, setInfoCity] = useState([]);
   useEffect(() => {
     try {
       const getServerPlansMonteria = async () => {
-        const url = `http://localhost:3300/api/v1/cities`;
+        const url = `http://localhost:3300/api/v1/cities/${id}`;
         const responseMonteria = await fetch(url);
         const dataMonteria = await responseMonteria.json();
-        setPlanMonteria(dataMonteria);
+        setInfoCity(dataMonteria);
       };
       getServerPlansMonteria();
     } catch (error) {
       console.log(error);
     }
-  }, []);
-  const { plan, name } = planMonteria;
+  }, [id]);
+  const { plans, name } = infoCity;
   return (
     <>
       <HeaderPage message={name} />
@@ -34,7 +36,7 @@ export const CityService = () => {
             </div>
           </div>
           <div className="divider-45 d-none d-lg-block"></div>
-          {plan && plan.map((plane) => <Plan key={plane.id} plane={plane} />)}
+          {plans && plans.map((plane) => <Plan key={plane.id} plane={plane} />)}
         </div>
       </section>
     </>

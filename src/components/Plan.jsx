@@ -6,6 +6,9 @@ import { Services } from "./Services";
 
 export const Plan = ({ plane }) => {
   const { name, price, ui_params, services } = plane;
+  const bandwidthSpeed = services.find((city) => city.type === "bandwidth");
+  const typeService = services.filter((service) => service.type != "bandwidth");
+  console.log(typeService);
   return (
     <>
       <div className="row c-gutter-60 container-card">
@@ -16,7 +19,7 @@ export const Plan = ({ plane }) => {
             </div>
             <div className="plan-desc">
               <div className="plan-content">
-                <h4 className="color-main">50</h4>
+                <h4 className="color-main">{bandwidthSpeed.name}</h4>
                 <p className="small-text text-left">
                   <i
                     className="color-main fa fa-angle-down"
@@ -24,7 +27,7 @@ export const Plan = ({ plane }) => {
                   ></i>
                   mb/s
                 </p>
-                <h4 className="color-main2">50</h4>
+                <h4 className="color-main2">{bandwidthSpeed.name}</h4>
                 <p className="small-text text-left">
                   <i
                     className="color-main2 fa fa-angle-up"
@@ -39,7 +42,7 @@ export const Plan = ({ plane }) => {
             </div>
             <div className="plan-features">
               <ul className="list-bordered">
-                {services.map((service) => (
+                {typeService.map((service) => (
                   <Services key={service.id} service={service} />
                 ))}
               </ul>
