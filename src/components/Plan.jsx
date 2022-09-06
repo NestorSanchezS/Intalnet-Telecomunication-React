@@ -2,11 +2,10 @@ import React from "react";
 import plan03 from "../assets/images/price-icon01.png";
 import plan02 from "../assets/images/price-icon02.png";
 import plan01 from "../assets/images/price-icon03.png";
+import { Services } from "./Services";
 
 export const Plan = ({ plane }) => {
   const { name, price, ui_params, services } = plane;
-  console.log(ui_params);
-
   return (
     <>
       <div className="row c-gutter-60 container-card">
@@ -40,9 +39,9 @@ export const Plan = ({ plane }) => {
             </div>
             <div className="plan-features">
               <ul className="list-bordered">
-                <li>Sorporte 24/7</li>
-                <li>47 Canales TV</li>
-                <li>Canales HD y SD</li>
+                {services.map((service) => (
+                  <Services key={service.id} service={service} />
+                ))}
               </ul>
             </div>
             <div className="price-wrap d-flex">

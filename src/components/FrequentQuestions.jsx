@@ -1,10 +1,24 @@
-import React from "react";
-import { useIntalnetContext } from "../hooks/useIntalnetContext";
+import React, { useEffect, useState } from "react";
 import { HeaderPage } from "./HeaderPage";
 import { QuestionAndAnswer } from "./QuestionAndAnswer";
 
 export const FrequentQuestions = () => {
-  const { getQuestions } = useIntalnetContext();
+  const [getQuestions, setGetQuestions] = useState([]);
+  //Consumimos Api question intalnet json-server
+  useEffect(() => {
+    try {
+      const callApiQuestions = async () => {
+        const url = "http://localhost:3300/api/v1/questions";
+        const response = await fetch(url);
+        const data = await response.json();
+        setGetQuestions(data);
+      };
+      callApiQuestions();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
   return (
     <>
       <HeaderPage message="Preguntas Frecuentes" />

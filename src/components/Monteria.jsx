@@ -7,7 +7,7 @@ export const Monteria = () => {
   useEffect(() => {
     try {
       const getServerPlansMonteria = async () => {
-        const url = "http://localhost:4000/cities/1";
+        const url = "http://localhost:3300/api/v1/cities";
         const responseMonteria = await fetch(url);
         const dataMonteria = await responseMonteria.json();
         setPlanMonteria(dataMonteria);
@@ -17,8 +17,8 @@ export const Monteria = () => {
       console.log(error);
     }
   }, []);
+  console.log(planMonteria);
   const { plan, name } = planMonteria;
-  console.log(plan);
 
   return (
     <>

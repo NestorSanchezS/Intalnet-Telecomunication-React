@@ -12,25 +12,8 @@ export const IntalnetProvider = ({ children }) => {
     Message: "",
   });
 
-  const [getQuestions, setGetQuestions] = useState([]);
-
-  //Consumimos Api question intalnet json-server
-  useEffect(() => {
-    try {
-      const callApiQuestions = async () => {
-        const url = "http://localhost:5000/questions";
-        const response = await fetch(url);
-        const data = await response.json();
-        setGetQuestions(data);
-      };
-      callApiQuestions();
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
-
   return (
-    <IntalnetContext.Provider value={{ dataFormContactus, getQuestions }}>
+    <IntalnetContext.Provider value={{ dataFormContactus }}>
       {children}
     </IntalnetContext.Provider>
   );
