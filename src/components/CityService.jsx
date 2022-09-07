@@ -36,7 +36,10 @@ export const CityService = () => {
             </div>
           </div>
           <div className="divider-45 d-none d-lg-block"></div>
-          {plans && plans.map((plane) => <Plan key={plane.id} plane={plane} />)}
+          <div className="row c-gutter-60 container-card">
+            {plans &&
+              plans.map((plane) => <Plan key={plane.id} plane={plane} />)}
+          </div>
         </div>
       </section>
     </>

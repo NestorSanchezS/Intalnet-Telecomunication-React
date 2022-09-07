@@ -1092,8 +1092,8 @@ form .has-placeholder.textarea label + [class*="fa-"] {
 }
 
 [role="tablist"] .card-header a {
-	background-image: -webkit-linear-gradient(left, #5b83cd 0%, #c280bf 100%);
-	background-image: linear-gradient(to right, #5b83cd 0%, #c280bf 100%);
+	background-image: -webkit-linear-gradient(to right, #E04D01 0%, #FFB562 100%);
+	background-image: linear-gradient(to right, #E04D01 0%, #FFB562 100%);
 	border-radius: 30px;
 	box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.13);
 	color: #fff;
@@ -1105,6 +1105,7 @@ form .has-placeholder.textarea label + [class*="fa-"] {
 	position: relative;
 	text-transform: uppercase;
 	word-wrap: break-word;
+	text-decoration: none;
 }
 
 [role="tablist"] .card-header a:before,
@@ -1152,8 +1153,8 @@ form .has-placeholder.textarea label + [class*="fa-"] {
 }
 
 [role="tablist"] .card-header a.collapsed:hover {
-	background-image: -webkit-linear-gradient(left, #5b83cd 0%, #c280bf 100%);
-	background-image: linear-gradient(to right, #5b83cd 0%, #c280bf 100%);
+	background-image: -webkit-linear-gradient(to right, #E04D01 0%, #FFB562 100%);
+	background-image: linear-gradient(to right, #E04D01 0%, #FFB562 100%);
 	color: #fff;
 }
 

@@ -8,59 +8,57 @@ export const Plan = ({ plane }) => {
   const { name, price, ui_params, services } = plane;
   const bandwidthSpeed = services.find((city) => city.type === "bandwidth");
   const typeService = services.filter((service) => service.type != "bandwidth");
-  console.log(typeService);
   return (
     <>
-      <div className="row c-gutter-60 container-card">
-        <div className="col-lg-4 col-12">
-          <div className="pricing-plan hero-bg rounded">
-            <div className={`plan-name text-uppercase ${ui_params}`}>
-              <h3>{name}</h3>
+      <div className="col-lg-4 col-12">
+        <div className="pricing-plan hero-bg rounded">
+          <div className={`plan-name text-uppercase bg-maincolor2`}>
+            <h3>{name}</h3>
+          </div>
+          <div className="plan-desc">
+            <div className="plan-content">
+              <h4 className="color-main">{bandwidthSpeed.name}</h4>
+              <p className="small-text text-left">
+                <i
+                  className="color-main fa fa-angle-down"
+                  aria-hidden="true"
+                ></i>
+                mb/s
+              </p>
+              <h4 className="color-main2">{bandwidthSpeed.name}</h4>
+              <p className="small-text text-left">
+                <i
+                  className="color-main2 fa fa-angle-up"
+                  aria-hidden="true"
+                ></i>
+                mb/s
+              </p>
             </div>
-            <div className="plan-desc">
-              <div className="plan-content">
-                <h4 className="color-main">{bandwidthSpeed.name}</h4>
-                <p className="small-text text-left">
-                  <i
-                    className="color-main fa fa-angle-down"
-                    aria-hidden="true"
-                  ></i>
-                  mb/s
-                </p>
-                <h4 className="color-main2">{bandwidthSpeed.name}</h4>
-                <p className="small-text text-left">
-                  <i
-                    className="color-main2 fa fa-angle-up"
-                    aria-hidden="true"
-                  ></i>
-                  mb/s
-                </p>
-              </div>
-              <div className="price-icon">
-                <img src={plan03} alt="" />
-              </div>
-            </div>
-            <div className="plan-features">
-              <ul className="list-bordered">
-                {typeService.map((service) => (
-                  <Services key={service.id} service={service} />
-                ))}
-              </ul>
-            </div>
-            <div className="price-wrap d-flex">
-              <span className="plan-sign small-text">$</span>
-              <span className="plan-price color-main2">{price}</span>
-              <span className="plan-decimals small-text"></span>
-            </div>
-            <div className="plan-button">
-              <a href="#" className="btn btn-maincolor">
-                <span>Lo quiero!</span>
-              </a>
+            <div className="price-icon">
+              <img src={plan03} alt="" />
             </div>
           </div>
-          <div className="divider-45 d-block d-lg-none"></div>
+          <div className="plan-features">
+            <ul className="list-bordered">
+              {typeService.map((service) => (
+                <Services key={service.id} service={service} />
+              ))}
+            </ul>
+          </div>
+          <div className="price-wrap d-flex">
+            <span className="plan-sign small-text">$</span>
+            <span className="plan-price color-main2">{price}</span>
+            <span className="plan-decimals small-text"></span>
+          </div>
+          <div className="plan-button">
+            <a href="#" className="btn btn-maincolor2">
+              <span>Lo quiero!</span>
+            </a>
+          </div>
         </div>
-        {/* <div className="col-lg-4 col-12">
+        <div className="divider-45 d-block d-lg-none"></div>
+      </div>
+      {/* <div className="col-lg-4 col-12">
           <div className="pricing-plan hero-bg rounded">
             <div className="plan-name text-uppercase bg-maincolor2">
               <h3>Premium</h3>
@@ -202,7 +200,6 @@ export const Plan = ({ plane }) => {
             </div>
           </div>
         </div> */}
-      </div>
     </>
   );
 };
