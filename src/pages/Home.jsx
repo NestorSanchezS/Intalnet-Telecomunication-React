@@ -1,5 +1,5 @@
 import React from "react";
-import { PageSlider } from "./PageSlider";
+import { PageSlider } from "../components/PageSlider";
 
 export const Home = () => {
   return (

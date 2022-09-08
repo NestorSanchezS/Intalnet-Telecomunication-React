@@ -1,7 +1,6 @@
 import React from "react";
 import { SERVICES } from "../constans";
-import { useIntalnetContext } from "../hooks/useIntalnetContext";
-import { HeaderPage } from "./HeaderPage";
+import { HeaderPage } from "../components/HeaderPage";
 
 export const ContactUs = () => {
   return (

@@ -8,7 +8,7 @@ export const QuestionAndAnswer = ({ questions }) => {
     //   <p>{answer}</p>
     // </div>
     <>
-      <div className="card">
+      <div className={`card`}>
         <div className="card-header" role="tab" id={`collapse0${id}_header`}>
           <h5>
             <a

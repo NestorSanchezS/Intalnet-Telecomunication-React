@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { HeaderPage } from "./HeaderPage";
-import { Plan } from "./Plan";
+import { HeaderPage } from "../components/HeaderPage";
+import { Plan } from "../components/Plan";
 
 export const CityService = () => {
   const { id } = useParams();

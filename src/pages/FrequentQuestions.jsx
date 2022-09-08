@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { HeaderPage } from "./HeaderPage";
-import { QuestionAndAnswer } from "./QuestionAndAnswer";
+import { HeaderPage } from "../components/HeaderPage";
+import { QuestionAndAnswer } from "../components/QuestionAndAnswer";
 
 export const FrequentQuestions = () => {
   const [getQuestions, setGetQuestions] = useState([]);
@@ -17,7 +17,7 @@ export const FrequentQuestions = () => {
     } catch (error) {
       console.log(error);
     }
-  }, []);
+  }, [HeaderPage]);
 
   return (
     <>
@@ -43,7 +43,6 @@ export const FrequentQuestions = () => {
             {getQuestions.map((questions) => (
               <QuestionAndAnswer key={questions.id} questions={questions} />
             ))}
-            <div className="d-none d-lg-block divider-50"></div>
           </div>
         </div>
       </section>

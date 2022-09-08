@@ -1,7 +1,7 @@
 import React from "react";
 import intalnet from "../assets/INTALNET-TELECOMUNICACIONES.png";
 import valores from "../assets/valoresintalnet.png";
-import { HeaderPage } from "./HeaderPage";
+import { HeaderPage } from "../components/HeaderPage";
 
 export const OurCompany = () => {
   return (
