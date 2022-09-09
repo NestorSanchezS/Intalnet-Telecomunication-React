@@ -5,6 +5,7 @@ import img16 from "../assets/images/square/34.png";
 import img33 from "../assets/images/square/36.png";
 import img37 from "../assets/images/square/37.png";
 import img38 from "../assets/images/square/38.jpg";
+import img39 from "../assets/images/square/39.webp";
 import img13 from "../assets/images/square/33.png";
 import img01 from "../assets/images/square/12.png";
 import img02 from "../assets/images/square/14.jpg";
@@ -31,6 +32,14 @@ export const BannerTv = () => {
               data-nav="true"
               data-loop="true"
             >
+              <a
+                href="images/square/03.jpg"
+                className="photoswipe-link"
+                data-width="800"
+                data-height="800"
+              >
+                <img src={img39} alt="" />
+              </a>
               <a
                 href="images/square/03.jpg"
                 className="photoswipe-link"
