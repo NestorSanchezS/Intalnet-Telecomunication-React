@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HeaderPage } from "../components/HeaderPage";
 import "../styles/shop.css";
 import img01 from "../assets/images/shop/01.jpg";
@@ -8,6 +8,21 @@ export const TechnologyAccessories = () => {
   const width_card2 = {
     width: "100%",
   };
+  useState;
+  useEffect(() => {
+    try {
+      const getProducts = async () => {
+        const url = "http://localhost:3300/api/v1/products";
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log(data);
+      };
+      getProducts();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
   return (
     <>
       <HeaderPage message="Accesorios de Tecnologia" />
