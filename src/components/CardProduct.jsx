@@ -1,19 +1,25 @@
 import React from "react";
-import img01 from "../assets/images/shop/01.jpg";
+import img01 from "../assets/images/shop/13.jpg";
 import { Link } from "react-router-dom";
-export const CardProduct = () => {
+export const CardProduct = ({ product }) => {
+  const { id, name, description, price, images } = product;
+  console.log(images[2]);
   const width_card = {
     width: "80%",
   };
+  let imgPath = img01;
+  if (images.length > 1) {
+    imgPath = `http://localhost:3300${images[0].path}`;
+  }
   return (
     <li className="product vertical-item padding-small content-padding">
       <div className="product-inner hero-bg rounded">
         <a className="link-scale" href="shop-product-right.html">
           <span className="onsale small-text">Promoción!</span>
-          <img src={img01} alt="" />
+          <img src={imgPath} alt="" />
         </a>
         <div className="item-content">
-          <h2>ZXHN F660 V8.0</h2>
+          <h2>{name}</h2>
           <div className="star-rating">
             <span style={width_card}>
               Rated <strong className="rating">4.00</strong> out of 5
@@ -22,10 +28,11 @@ export const CardProduct = () => {
           <span className="price">
             <del>
               <span>
-                <span>$</span>250.00
+                <span>$</span>2500
               </span>
             </del>
-            <span>$</span>200.00
+            <span>$</span>
+            {price}
           </span>
           <span
             rel="nofollow"

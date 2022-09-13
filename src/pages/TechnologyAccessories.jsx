@@ -8,14 +8,14 @@ export const TechnologyAccessories = () => {
   const width_card2 = {
     width: "100%",
   };
-  useState;
+  const [productCardApi, setProductCardApi] = useState([]);
   useEffect(() => {
     try {
       const getProducts = async () => {
         const url = "http://localhost:3300/api/v1/products";
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data);
+        setProductCardApi(data);
       };
       getProducts();
     } catch (error) {
@@ -32,7 +32,10 @@ export const TechnologyAccessories = () => {
             <main className="col-lg-8 col-xl-9">
               <div className="columns-3">
                 <ul className="products">
-                  <CardProduct />
+                  {productCardApi &&
+                    productCardApi.map((product) => (
+                      <CardProduct key={product.id} product={product} />
+                    ))}
                 </ul>
               </div>
             </main>
