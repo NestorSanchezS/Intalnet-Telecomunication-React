@@ -4,6 +4,7 @@ import img01 from "../assets/images/shop/01.jpg";
 import img11 from "../assets/images/shop/11.jpg";
 import img12 from "../assets/images/shop/12.jpg";
 import "../styles/shop.css";
+import { Link } from "react-router-dom";
 
 export const TechnologyAccessories = () => {
   const width_card = {
@@ -48,7 +49,9 @@ export const TechnologyAccessories = () => {
                           href="shop-cart.html"
                           className="btn btn-maincolor small-btn product_type_simple add_to_cart_button"
                         >
-                          <span>Más información</span>
+                          <span>
+                            <Link to="infoproduct">Más información</Link>
+                          </span>
                         </a>
                       </div>
                     </div>

@@ -8,6 +8,7 @@ import { CityService } from "../pages/CityService";
 import { IntalnetProvider } from "../context/intalnetProvider";
 import { Layout } from "../layout/Layout";
 import { TechnologyAccessories } from "../pages/TechnologyAccessories";
+import { InfoProduct } from "../components/InfoProduct";
 export const AppRoutes = () => {
   return (
     <IntalnetProvider>
@@ -23,6 +24,7 @@ export const AppRoutes = () => {
               path="technologyaccessories"
               element={<TechnologyAccessories />}
             />
+            <Route path="infoproduct" element={<InfoProduct />} />
           </Route>
         </Routes>
       </BrowserRouter>
