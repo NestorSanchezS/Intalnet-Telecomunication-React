@@ -70,7 +70,9 @@ export const NavBar = () => {
                                 <a>Internet dedicado</a>
                               </li>
                               <li>
-                                <a>Accesorios de tecnologia</a>
+                                <Link to="technologyaccessories">
+                                  Accesorios de tecnologia
+                                </Link>
                               </li>
                             </ul>
                           </li>

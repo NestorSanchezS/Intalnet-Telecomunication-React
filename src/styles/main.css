@@ -200,6 +200,7 @@ h6 {
 }
 a {
 	cursor: pointer;
+	text-decoration: none;
 }
 h1:first-child,
 h2:first-child,
@@ -11164,7 +11165,7 @@ aside > * + * {
 }
 
 .star-rating {
-	color: #c280bf;
+	color: #FF7F3F;
 	font-family: "FontAwesome";
 	font-size: 13px;
 	height: 1em;
@@ -11297,7 +11298,7 @@ widget_product_search
 .widget_search button:before,
 .widget_mailchimp button:before,
 .widget_product_search form:before {
-	background-color: #c280bf;
+	background-color: #FF7F3F;
 	border-radius: 0 5px 5px 0px;
 	color: #fff;
 	content: "\f002";
