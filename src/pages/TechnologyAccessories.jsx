@@ -1,15 +1,10 @@
 import React from "react";
 import { HeaderPage } from "../components/HeaderPage";
-import img01 from "../assets/images/shop/01.jpg";
-import img11 from "../assets/images/shop/11.jpg";
-import img12 from "../assets/images/shop/12.jpg";
 import "../styles/shop.css";
-import { Link } from "react-router-dom";
+import img01 from "../assets/images/shop/01.jpg";
+import { CardProduct } from "../components/CardProduct";
 
 export const TechnologyAccessories = () => {
-  const width_card = {
-    width: "80%",
-  };
   const width_card2 = {
     width: "100%",
   };
@@ -22,40 +17,7 @@ export const TechnologyAccessories = () => {
             <main className="col-lg-8 col-xl-9">
               <div className="columns-3">
                 <ul className="products">
-                  <li className="product vertical-item padding-small content-padding">
-                    <div className="product-inner hero-bg rounded">
-                      <a className="link-scale" href="shop-product-right.html">
-                        <span className="onsale small-text">Promoción!</span>
-                        <img src={img01} alt="" />
-                      </a>
-                      <div className="item-content">
-                        <h2>ZXHN F660 V8.0</h2>
-                        <div className="star-rating">
-                          <span style={width_card}>
-                            Rated <strong className="rating">4.00</strong> out
-                            of 5
-                          </span>
-                        </div>
-                        <span className="price">
-                          <del>
-                            <span>
-                              <span>$</span>250.00
-                            </span>
-                          </del>
-                          <span>$</span>200.00
-                        </span>
-                        <a
-                          rel="nofollow"
-                          href="shop-cart.html"
-                          className="btn btn-maincolor small-btn product_type_simple add_to_cart_button"
-                        >
-                          <span>
-                            <Link to="infoproduct">Más información</Link>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
+                  <CardProduct />
                 </ul>
               </div>
             </main>
