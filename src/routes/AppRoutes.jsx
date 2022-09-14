@@ -24,7 +24,7 @@ export const AppRoutes = () => {
               path="technologyaccessories"
               element={<TechnologyAccessories />}
             />
-            <Route path="infoproduct" element={<InfoProduct />} />
+            <Route path="infoproduct/:id" element={<InfoProduct />} />
           </Route>
         </Routes>
       </BrowserRouter>

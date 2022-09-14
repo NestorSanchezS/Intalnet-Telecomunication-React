@@ -3,7 +3,6 @@ import img01 from "../assets/images/shop/13.jpg";
 import { Link } from "react-router-dom";
 export const CardProduct = ({ product }) => {
   const { id, name, description, price, images } = product;
-  console.log(images[2]);
   const width_card = {
     width: "80%",
   };
@@ -40,7 +39,9 @@ export const CardProduct = ({ product }) => {
             className="btn btn-maincolor small-btn product_type_simple add_to_cart_button"
           >
             <span>
-              <a>Más información</a>
+              <a>
+                <Link to={`/infoproduct/${id}`}>Más información</Link>
+              </a>
             </span>
           </span>
         </div>
