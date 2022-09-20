@@ -1,5 +1,10 @@
 import React from "react";
+import { HeaderPage } from "../components/HeaderPage";
 
 export const UserProtection = () => {
-  return <div>UserProtection</div>;
+  return (
+    <>
+      <HeaderPage message="Protección al usuario" />
+    </>
+  );
 };
