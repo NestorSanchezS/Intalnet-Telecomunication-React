@@ -38,9 +38,9 @@ export const OurCompany = () => {
                 permanente.
               </p>
               <h1 className="text-center widget-title mt-60">VALORES</h1>
-              <span className="valores-intalnet ms-4">
+              <p className="valores-intalnet text-center">
                 <img src={valores} alt="logo-intalnet" />
-              </span>
+              </p>
             </div>
           </div>
           <div className="divider-45 d-none d-lg-block"></div>

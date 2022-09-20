@@ -5,6 +5,7 @@ import img01 from "../assets/images/shop/03.jpg";
 import img02 from "../assets/images/shop/13.jpg";
 import img03 from "../assets/images/shop/14.jpg";
 import img04 from "../assets/images/shop/15.jpg";
+import { TopProducts } from "./TopProducts.jsx";
 
 export const InfoProduct = () => {
   const { id } = useParams();
@@ -122,6 +123,9 @@ export const InfoProduct = () => {
                 </div>
               </div>
             </main>
+            <aside className="col-lg-5 col-xl-4">
+              <TopProducts />
+            </aside>
           </div>
         </div>
       </section>

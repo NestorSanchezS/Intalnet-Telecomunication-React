@@ -9,6 +9,9 @@ import { IntalnetProvider } from "../context/intalnetProvider";
 import { Layout } from "../layout/Layout";
 import { TechnologyAccessories } from "../pages/TechnologyAccessories";
 import { InfoProduct } from "../components/InfoProduct";
+import { UserProtection } from "../pages/UserProtection";
+import { Pqr } from "../pages/Pqr";
+
 export const AppRoutes = () => {
   return (
     <IntalnetProvider>
@@ -25,6 +28,8 @@ export const AppRoutes = () => {
               element={<TechnologyAccessories />}
             />
             <Route path="infoproduct/:id" element={<InfoProduct />} />
+            <Route path="pqr" element={<Pqr />} />
+            <Route path="userprotection" element={<UserProtection />} />
           </Route>
         </Routes>
       </BrowserRouter>
