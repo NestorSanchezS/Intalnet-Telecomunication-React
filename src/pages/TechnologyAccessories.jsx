@@ -20,8 +20,9 @@ export const TechnologyAccessories = () => {
     }
   }, []);
 
-  const topProduct = productCardApi.filter((top) => top.categories === "top");
-  console.log(topProduct);
+  const topProduct = productCardApi.filter(
+    (top) => top.categories[0] === "top"
+  );
 
   return (
     <>
@@ -151,7 +152,7 @@ export const TechnologyAccessories = () => {
                   </p>
                 </div>
               </div> */}
-              <TopProducts />
+              <TopProducts topProduct={topProduct} />
             </aside>
           </div>
         </div>

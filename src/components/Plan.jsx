@@ -6,9 +6,10 @@ import { Services } from "./Services";
 
 export const Plan = ({ plane }) => {
   const { name, price, ui_params, services } = plane;
+  console.log(services);
   const bandwidthSpeed = services.find((city) => city.type === "bandwidth");
   const typeService = services.filter((service) => service.type != "bandwidth");
-  console.log(ui_params);
+
   return (
     <>
       <div className="col-lg-4 col-12 mt-3">

@@ -14,7 +14,7 @@ export const CardProduct = ({ product }) => {
     <li className="product vertical-item padding-small content-padding">
       <div className="product-inner hero-bg rounded">
         <a className="link-scale" href="shop-product-right.html">
-          {categories === "promotion" && (
+          {categories[0] === "promotion" && (
             <span className="onsale small-text">Promoción!</span>
           )}
           <img src={imgPath} alt="" />
