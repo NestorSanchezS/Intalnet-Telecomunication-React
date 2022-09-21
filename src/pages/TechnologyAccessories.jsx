@@ -20,6 +20,9 @@ export const TechnologyAccessories = () => {
     }
   }, []);
 
+  const topProduct = productCardApi.filter((top) => top.categories === "top");
+  console.log(topProduct);
+
   return (
     <>
       <HeaderPage message="Accesorios de Tecnologia" />

@@ -5,6 +5,7 @@ export const TopProducts = () => {
   const width_card2 = {
     width: "100%",
   };
+
   return (
     <div className="widget woocommerce widget_top_rated_products">
       <h5 className="widget-title">Top Products</h5>

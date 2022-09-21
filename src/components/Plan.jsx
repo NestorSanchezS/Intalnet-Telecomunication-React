@@ -8,11 +8,12 @@ export const Plan = ({ plane }) => {
   const { name, price, ui_params, services } = plane;
   const bandwidthSpeed = services.find((city) => city.type === "bandwidth");
   const typeService = services.filter((service) => service.type != "bandwidth");
+  console.log(ui_params);
   return (
     <>
-      <div className="col-lg-4 col-12">
+      <div className="col-lg-4 col-12 mt-3">
         <div className="pricing-plan hero-bg rounded">
-          <div className={`plan-name text-uppercase bg-maincolor2`}>
+          <div className={`plan-name text-uppercase ${ui_params.bgcolor}`}>
             <h3>{name}</h3>
           </div>
           <div className="plan-desc">

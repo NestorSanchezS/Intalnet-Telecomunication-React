@@ -2,7 +2,7 @@ import React from "react";
 import img01 from "../assets/images/shop/13.jpg";
 import { Link } from "react-router-dom";
 export const CardProduct = ({ product }) => {
-  const { id, name, description, price, images } = product;
+  const { id, name, price, images, categories } = product;
   const width_card = {
     width: "80%",
   };
@@ -14,7 +14,9 @@ export const CardProduct = ({ product }) => {
     <li className="product vertical-item padding-small content-padding">
       <div className="product-inner hero-bg rounded">
         <a className="link-scale" href="shop-product-right.html">
-          <span className="onsale small-text">Promoción!</span>
+          {categories === "promotion" && (
+            <span className="onsale small-text">Promoción!</span>
+          )}
           <img src={imgPath} alt="" />
         </a>
         <div className="item-content">
