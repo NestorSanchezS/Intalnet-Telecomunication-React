@@ -5,11 +5,13 @@ import service01 from "../assets/images/service/01.png";
 import service02 from "../assets/images/service/02.jpg";
 import service03 from "../assets/images/service/03.jpg";
 import service04 from "../assets/images/service/04.jpg";
+import { TargetServicesBanner } from "../components/TargetServicesBanner";
 
 export const Home = () => {
   return (
     <>
       <PageSlider />
+      <TargetServicesBanner />
       <section
         className="s-pt-60 s-pb-50 s-pt-lg-160 s-pb-lg-110 ls ms service-part c-gutter-0 c-mb-20 c-mb-lg-60 text-center text-lg-left"
         id="services"

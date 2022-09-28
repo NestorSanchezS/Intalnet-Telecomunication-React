@@ -143,10 +143,10 @@ export const PageSlider = () => {
           ></a>
         </p>
       </div>
-      <div className="arrow">
+      {/* <div className="arrow">
         <img src={bottom} alt="" />
-      </div>
-      <div className="animated-arrow">
+      </div> */}
+      {/* <div className="animated-arrow">
         <a href="#price">
           <div className="mouse_scroll">
             <span className="">
@@ -160,7 +160,7 @@ export const PageSlider = () => {
             </span>
           </div>
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };
