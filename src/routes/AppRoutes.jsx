@@ -14,25 +14,23 @@ import { Pqr } from "../pages/Pqr";
 
 export const AppRoutes = () => {
   return (
-    <IntalnetProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="ourcompany" element={<OurCompany />} />
-            <Route path="city/:id" element={<CityService />} />
-            <Route path="contactus" element={<ContactUs />} />
-            <Route path="frequentquestions" element={<FrequentQuestions />} />
-            <Route
-              path="technologyaccessories"
-              element={<TechnologyAccessories />}
-            />
-            <Route path="infoproduct/:id" element={<InfoProduct />} />
-            <Route path="pqr" element={<Pqr />} />
-            <Route path="userprotection" element={<UserProtection />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </IntalnetProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="ourcompany" element={<OurCompany />} />
+          <Route path="city/:id" element={<CityService />} />
+          <Route path="contactus" element={<ContactUs />} />
+          <Route path="frequentquestions" element={<FrequentQuestions />} />
+          <Route
+            path="technologyaccessories"
+            element={<TechnologyAccessories />}
+          />
+          <Route path="infoproduct/:id" element={<InfoProduct />} />
+          <Route path="pqr" element={<Pqr />} />
+          <Route path="userprotection" element={<UserProtection />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };

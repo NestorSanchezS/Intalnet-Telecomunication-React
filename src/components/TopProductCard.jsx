@@ -12,7 +12,7 @@ export const TopProductCard = ({ topCard }) => {
   }
   return (
     <li>
-      <a href="shop-product-right.html">
+      <a>
         <img src={imgPath} alt="" />
         <span className="product-title">{name}</span>
       </a>
@@ -24,12 +24,14 @@ export const TopProductCard = ({ topCard }) => {
         </span>
       </div>
       <span className="woocommerce-Price-amount amount">
-        <del>
-          <span>
-            <span>$</span>
-            {previous_price}
-          </span>
-        </del>
+        {previous_price > 0 && (
+          <del>
+            <span>
+              <span>$</span>
+              {previous_price}
+            </span>
+          </del>
+        )}
         <span className="woocommerce-Price-currencySymbol">$</span>
         {price}
       </span>

@@ -1,8 +1,7 @@
 import React from "react";
 import img01 from "../assets/images/shop/13.jpg";
-import { Link } from "react-router-dom";
 export const CardProduct = ({ product }) => {
-  const { id, name, price, images, categories } = product;
+  const { id, name, price, previous_price, images, categories } = product;
   const width_card = {
     width: "80%",
   };
@@ -27,11 +26,15 @@ export const CardProduct = ({ product }) => {
             </span>
           </div>
           <span className="price">
-            <del>
-              <span>
-                <span>$</span>2500
-              </span>
-            </del>
+            {previous_price > 0 && (
+              <del>
+                <span>
+                  <span>$</span>
+                  {previous_price}
+                </span>
+              </del>
+            )}
+
             <span>$</span>
             {price}
           </span>

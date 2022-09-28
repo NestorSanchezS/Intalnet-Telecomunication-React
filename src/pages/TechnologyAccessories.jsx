@@ -3,26 +3,10 @@ import { HeaderPage } from "../components/HeaderPage";
 import "../styles/shop.css";
 import { CardProduct } from "../components/CardProduct";
 import { TopProducts } from "../components/TopProducts";
+import { useIntalnetContext } from "../hooks/useIntalnetContext";
 
 export const TechnologyAccessories = () => {
-  const [productCardApi, setProductCardApi] = useState([]);
-  useEffect(() => {
-    try {
-      const getProducts = async () => {
-        const url = "http://localhost:3300/api/v1/products";
-        const response = await fetch(url);
-        const data = await response.json();
-        setProductCardApi(data);
-      };
-      getProducts();
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
-
-  const topProduct = productCardApi.filter(
-    (top) => top.categories[0] === "top"
-  );
+  const { productCardApi, topProduct } = useIntalnetContext();
 
   return (
     <>
@@ -33,10 +17,9 @@ export const TechnologyAccessories = () => {
             <main className="col-lg-8 col-xl-9">
               <div className="columns-3">
                 <ul className="products">
-                  {productCardApi &&
-                    productCardApi.map((product) => (
-                      <CardProduct key={product.id} product={product} />
-                    ))}
+                  {productCardApi?.map((product) => (
+                    <CardProduct key={product.id} product={product} />
+                  ))}
                 </ul>
               </div>
             </main>

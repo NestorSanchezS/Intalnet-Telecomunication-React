@@ -4,10 +4,12 @@ import { App } from "./App";
 import "./index.css";
 import * as bootstrap from "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import { IntalnetProvider } from "./context/IntalnetProvider";
+import { IntalnetProvider } from "./context/intalnetProvider";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <IntalnetProvider>
+      <App />
+    </IntalnetProvider>
   </React.StrictMode>
 );

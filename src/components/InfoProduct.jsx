@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { HeaderPage } from "./HeaderPage.jsx";
 import img01 from "../assets/images/shop/03.jpg";
@@ -6,9 +6,13 @@ import img02 from "../assets/images/shop/13.jpg";
 import img03 from "../assets/images/shop/14.jpg";
 import img04 from "../assets/images/shop/15.jpg";
 import { TopProducts } from "./TopProducts.jsx";
+import { useIntalnetContext } from "../hooks/useIntalnetContext.jsx";
+import { ImgInfoProduct } from "./ImgInfoProduct.jsx";
 
 export const InfoProduct = () => {
+  const { topProduct } = useIntalnetContext();
   const { id } = useParams();
+
   const [product, setProduct] = useState([]);
   useEffect(() => {
     try {
@@ -28,6 +32,11 @@ export const InfoProduct = () => {
   };
   const { name, description, price, images } = product;
 
+  if (images == undefined || images.length == 0) {
+    return <p>Loading...</p>;
+  }
+  console.log(images[0].path);
+
   return (
     <>
       <HeaderPage message="Accesorios de Tecnologia" />
@@ -38,6 +47,9 @@ export const InfoProduct = () => {
               <div className="product">
                 <div className="images" data-columns="4">
                   <figure>
+                    {/* {images?.map((img) => (
+                      <ImgInfoProduct key={img.id} img={img} />
+                    ))} */}
                     <div data-thumb={img01}>
                       <a href={img01}>
                         <img
@@ -124,7 +136,7 @@ export const InfoProduct = () => {
               </div>
             </main>
             <aside className="col-lg-5 col-xl-4">
-              <TopProducts />
+              <TopProducts topProduct={topProduct} />
             </aside>
           </div>
         </div>
