@@ -5,7 +5,6 @@ import { FrequentQuestions } from "../pages/FrequentQuestions";
 import { Home } from "../pages/Home";
 import { OurCompany } from "../pages/OurCompany";
 import { CityService } from "../pages/CityService";
-import { IntalnetProvider } from "../context/intalnetProvider";
 import { Layout } from "../layout/Layout";
 import { TechnologyAccessories } from "../pages/TechnologyAccessories";
 import { InfoProduct } from "../components/InfoProduct";

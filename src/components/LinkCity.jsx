@@ -5,7 +5,7 @@ export const LinkCity = ({ city }) => {
   const { id, name } = city;
   return (
     <li>
-      <Link to={`/city/${id}`}>{name}</Link>
+      <a href={`/city/${id}`}>{name}</a>
     </li>
   );
 };

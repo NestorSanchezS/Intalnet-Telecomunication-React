@@ -12,6 +12,7 @@ export const Home = () => {
     <>
       <PageSlider />
       <TargetServicesBanner />
+      <BannerTv />
       <section
         className="s-pt-60 s-pb-50 s-pt-lg-160 s-pb-lg-110 ls ms service-part c-gutter-0 c-mb-20 c-mb-lg-60 text-center text-lg-left"
         id="services"
@@ -170,7 +171,6 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <BannerTv />
     </>
   );
 };

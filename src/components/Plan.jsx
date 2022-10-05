@@ -11,8 +11,8 @@ export const Plan = ({ plane }) => {
 
   return (
     <>
-      <div className="col-lg-4 col-12 mt-3">
-        <div className="pricing-plan hero-bg rounded">
+      <div className="col-lg-4 col-12 mt-3 mb-0">
+        <div className="pricing-plan hero-bg rounded ">
           <div className={`plan-name text-uppercase ${ui_params.bgcolor}`}>
             <h3>{name}</h3>
           </div>
@@ -36,7 +36,7 @@ export const Plan = ({ plane }) => {
               </p>
             </div>
             <div className="price-icon">
-              <img src={plan03} alt="" />
+              <img src={plan02} alt="" />
             </div>
           </div>
           <div className="plan-features">
@@ -47,18 +47,18 @@ export const Plan = ({ plane }) => {
             </ul>
           </div>
           <div className="price-wrap d-flex">
-            <span className="plan-sign small-text">$</span>
-            <span className="plan-price color-main2">{price}</span>
-            <span className="plan-decimals small-text"></span>
+            <span className="plan-sign small-text">Cop</span>
+            <span className="plan-price color-main">{price}</span>
+            <span className="plan-decimals small-text">mil</span>
           </div>
           <div className="plan-button">
-            <a href="#" className="btn btn-maincolor2">
+            <a href="#" className="btn btn-maincolor">
               <span>Lo quiero!</span>
             </a>
           </div>
         </div>
-        <div className="divider-45 d-block d-lg-none"></div>
       </div>
+
       {/* <div className="col-lg-4 col-12">
           <div className="pricing-plan hero-bg rounded">
             <div className="plan-name text-uppercase bg-maincolor2">

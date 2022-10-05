@@ -6,7 +6,7 @@ import { HeaderPage } from "../components/HeaderPage";
 export const OurCompany = () => {
   return (
     <>
-      <HeaderPage message="¿Quienes Somos?" />
+      <HeaderPage message="¿Quiénes Somos?" />
       <section className="s-py-80 s-py-lg-120 s-py-xl-60 ls ms">
         <div className="container">
           <div className="row">

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { BannerTv } from "../components/BannerTv";
 import { HeaderPage } from "../components/HeaderPage";
 import { Plan } from "../components/Plan";
+import { ButtonGrillTv } from "../components/ButtonGrillTv";
 
 export const CityService = () => {
   const { id } = useParams();
@@ -20,10 +22,11 @@ export const CityService = () => {
     }
   }, [id]);
   const { plans, name } = infoCity;
+
   return (
     <>
       <HeaderPage message={name} />
-      <section className="s-py-80 s-py-lg-120 s-py-xl-160 ls ms">
+      <section className="s-py-80 s-py-lg-120 s-py-xl-160 ls ms container_tv">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2" id="price">
@@ -41,7 +44,9 @@ export const CityService = () => {
               plans.map((plane) => <Plan key={plane.id} plane={plane} />)}
           </div>
         </div>
+        <ButtonGrillTv name={name} />
       </section>
+      {name !== "Los Córdoba -Córdoba" && <BannerTv />}
     </>
   );
 };
