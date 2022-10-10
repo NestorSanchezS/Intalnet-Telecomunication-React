@@ -44,7 +44,7 @@ export const CityService = () => {
               plans.map((plane) => <Plan key={plane.id} plane={plane} />)}
           </div>
         </div>
-        <ButtonGrillTv name={name} />
+        <ButtonGrillTv name={name} plane={plans} />
       </section>
       {name !== "Los Córdoba -Córdoba" && <BannerTv />}
     </>
