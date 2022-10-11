@@ -93,9 +93,7 @@ export const NavBar = () => {
                             </Link>
                           </li>
                           <li>
-                            <Link to="userprotection">
-                              Protección al usuario
-                            </Link>
+                            <a href="userprotection">Protección al usuario</a>
                           </li>
                         </ul>
                       </li>

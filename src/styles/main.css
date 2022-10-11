@@ -16280,6 +16280,14 @@ body.active-side-header.slide-right .page_header_side {
 	height: 100%;
 }
 
+.entry-title-a{
+	text-decoration: none;
+	color: #4C4C4C;
+	font-size: 22px;
+	font-weight:80px;
+	font-bold: 80px;
+}
+
 .entry-title,
 .entry-title:last-child {
 	font-size: 30px;
