@@ -3,6 +3,9 @@ import { HeaderPage } from "../components/HeaderPage";
 import img7 from "../assets/images/gallery/11.jpg";
 import img8 from "../assets/images/gallery/26.png";
 import img9 from "../assets/images/gallery/27.jpg";
+import img10 from "../assets/images/gallery/29.jpg";
+import img11 from "../assets/images/gallery/30.jpg";
+import img12 from "../assets/images/gallery/31.png";
 import pdfSeguridad from "../assets/docs/seguridad_en_la_red.pdf";
 import pdfBloquear from "../assets/docs/bloquear_sitios_en_internet_explorer_y_firefox.pdf";
 import pdfProteja from "../assets/docs/proteja_su_red-filtro_antivirus_y_antispam.pdf";
@@ -13,21 +16,21 @@ export const UserProtection = () => {
   return (
     <>
       <HeaderPage message="Protección al usuario" />
-      <section class="ls s-pt-80 s-pb-50 s-pt-lg-120 s-pb-lg-90 s-pt-xl-160 s-pb-xl-130 blog-grid">
-        <div class="container">
-          <div class="row c-mb-30">
-            <main class="offset-lg-1 col-lg-10">
-              <div class="row isotope-wrapper masonry-layout">
-                <div class="col-xl-4 col-md-6">
-                  <article class="vertical-item text-center content-padding padding-small hero-bg rounded rounded-image-top post type-post status-publish format-standard has-post-thumbnail">
-                    <div class="item-media post-thumbnail">
+      <section className="ls s-pt-80 s-pb-50 s-pt-lg-120 s-pb-lg-90 s-pt-xl-160 s-pb-xl-130 blog-grid">
+        <div className="container">
+          <div className="row c-mb-30">
+            <main className="offset-lg-1 col-lg-10">
+              <div className="row isotope-wrapper masonry-layout">
+                <div className="col-xl-4 col-md-6">
+                  <article className="vertical-item text-center content-padding padding-small hero-bg rounded rounded-image-top post type-post status-publish format-standard has-post-thumbnail">
+                    <div className="item-media post-thumbnail">
                       <a href="blog-single-full.html">
                         <img src={img8} alt="" />
                       </a>
                     </div>
-                    <div class="item-content">
-                      <header class="entry-header d-block">
-                        <h4 class="entry-title letters-title-card">
+                    <div className="item-content">
+                      <header className="entry-header d-block">
+                        <h4 className="entry-title letters-title-card">
                           <a
                             className="entry-title-a"
                             href="blog-single-video-full.html"
@@ -36,13 +39,17 @@ export const UserProtection = () => {
                             Seguridad en la Red
                           </a>
                         </h4>
-                        <div class="entry-meta">
-                          <span class="screen-reader-text">Posted on</span>
+                        <div className="entry-meta">
+                          <span className="screen-reader-text">Posted on</span>
                         </div>
                       </header>
 
-                      <div class="entry-content">
-                        <p>Conoce como funciona la seguriudad en la red.</p>
+                      <div className="entry-content">
+                        <p>
+                          La red mundial Internet y sus elementos asociados son
+                          mecanismos ágiles que proveen una alta gama de
+                          posibilidades de comunicación...
+                        </p>
                       </div>
                       <button
                         type="button"
@@ -63,11 +70,11 @@ export const UserProtection = () => {
                   </article>
                 </div>
 
-                <div class="col-xl-4 col-md-6 ">
-                  <article class="vertical-item text-center content-padding padding-small hero-bg rounded rounded-image-top post type-post status-publish format-standard has-post-thumbnail">
-                    <div class="item-content">
-                      <header class="entry-header d-block">
-                        <h4 class="entry-title">
+                <div className="col-xl-4 col-md-6 ">
+                  <article className="vertical-item text-center content-padding padding-small hero-bg rounded rounded-image-top post type-post status-publish format-standard has-post-thumbnail">
+                    <div className="item-content">
+                      <header className="entry-header d-block">
+                        <h4 className="entry-title">
                           <a
                             className="entry-title-a"
                             href="blog-single-video-full.html"
@@ -76,12 +83,12 @@ export const UserProtection = () => {
                             Bloquear sitios en Internet Explorer y Firefox
                           </a>
                         </h4>
-                        <div class="entry-meta">
-                          <span class="screen-reader-text">Posted on</span>
+                        <div className="entry-meta">
+                          <span className="screen-reader-text">Posted on</span>
                         </div>
                       </header>
 
-                      <div class="entry-content">
+                      <div className="entry-content">
                         <p>
                           Aprende a bloquear citios web en navegadores como
                           Chrome y Morzilla.
@@ -106,14 +113,14 @@ export const UserProtection = () => {
                   </article>
                 </div>
 
-                <div class="col-xl-4 col-md-6">
-                  <article class="vertical-item text-center content-padding padding-small hero-bg rounded rounded-image-top post type-post status-publish format-standard has-post-thumbnail">
-                    <div class="embed-responsive embed-responsive-3by2">
+                <div className="col-xl-4 col-md-6">
+                  <article className="vertical-item text-center content-padding padding-small hero-bg rounded rounded-image-top post type-post status-publish format-standard has-post-thumbnail">
+                    <div className="embed-responsive embed-responsive-3by2">
                       <img src={img9} alt="" />
                     </div>
-                    <div class="item-content">
-                      <header class="entry-header d-block">
-                        <h4 class="entry-title">
+                    <div className="item-content">
+                      <header className="entry-header d-block">
+                        <h4 className="entry-title">
                           <a
                             className="entry-title-a"
                             href="blog-single-video-full.html"
@@ -122,11 +129,11 @@ export const UserProtection = () => {
                             Riesgo en la Red Malware
                           </a>
                         </h4>
-                        <div class="entry-meta">
-                          <span class="screen-reader-text">Posted on</span>
+                        <div className="entry-meta">
+                          <span className="screen-reader-text">Posted on</span>
                         </div>
                       </header>
-                      <div class="entry-content">
+                      <div className="entry-content">
                         <p>
                           Malware es cualquier código que pueda utilizarse para
                           robar datos, evitar los controles de acceso, ocasionar
@@ -152,72 +159,48 @@ export const UserProtection = () => {
                   </article>
                 </div>
 
-                <div class="col-xl-4 col-md-6">
-                  <article class="cover-image ds s-overlay post type-post status-publish format-quote has-post-thumbnail">
-                    <div class="post-thumbnail">
+                <div className="col-xl-4 col-md-6">
+                  <article className="cover-image ds s-overlay post type-post status-publish format-quote has-post-thumbnail">
+                    <div className="post-thumbnail">
                       <a href="blog-single-full.html">
                         <img src={img7} alt="" />
                       </a>
                     </div>
-                    <header class="entry-header">
-                      <img src={img8} class="avatar" alt="" />
+                    <header className="entry-header">
+                      <img src={img12} className="avatar" alt="" />
                     </header>
-                    <div class="entry-content">
+                    <div className="entry-content">
                       <blockquote>
                         <cite>
-                          <a href="http://www.brainyquote.com/quotes/quotes/m/marktwain163473.html">
-                            Gregory D. Grey, Client
-                          </a>
+                          <a>INTALNET TELECOMUNICACIONES S.A.S</a>
                         </cite>
                         <p>
-                          We had hughesnet for ages and were completely unhappy
-                          with it. We switched to MaxiCom and have never looked
-                          back. We are much much happier!
+                          Régimen de protección de los derechos de los usuarios
+                          de servicios de telecomunicaciones.
                         </p>
                       </blockquote>
-                      <div class="entry-meta">
-                        <span class="post-tags">
-                          <i class="fa fa-tags fs-14 color-main"></i>
-                          <span class="screen-reader-text">Categories</span>
-                          <a href="blog-left.html" rel="category tag">
-                            quote
-                          </a>
+                      <div className="entry-meta">
+                        <span className="post-tags">
+                          <i className="fa fa-tags fs-14 color-main"></i>
+                          <span className="screen-reader-text">Categories</span>
+                          <a rel="category tag">quote</a>
                         </span>
                       </div>
                     </div>
                   </article>
                 </div>
 
-                <div class="col-xl-4 col-md-6">
-                  <article class="vertical-item text-center content-padding padding-small hero-bg rounded rounded-image-top post type-post status-publish format-standard has-post-thumbnail">
-                    <div class="item-media post-thumbnail">
-                      <div
-                        class="owl-carousel"
-                        data-loop="true"
-                        data-margin="0"
-                        data-nav="false"
-                        data-dots="true"
-                        data-autoplay="false"
-                        data-responsive-xs="1"
-                        data-responsive-sm="1"
-                        data-responsive-md="1"
-                        data-responsive-lg="1"
-                      >
-                        <div class="item">
-                          <img src={img8} alt="image" />
-                        </div>
-                        <div class="item">
-                          <img src={img8} alt="image" />
-                        </div>
-                        <div class="item">
-                          <img src={img8} alt="image" />
-                        </div>
-                      </div>
+                <div className="col-xl-4 col-md-6">
+                  <article className="vertical-item text-center content-padding padding-small hero-bg rounded rounded-image-top post type-post status-publish format-standard has-post-thumbnail">
+                    <div className="item-media post-thumbnail">
+                      <a href="blog-single-full.html">
+                        <img src={img10} alt="" />
+                      </a>
                     </div>
 
-                    <div class="item-content">
-                      <header class="entry-header d-block">
-                        <h4 class="entry-title">
+                    <div className="item-content">
+                      <header className="entry-header d-block">
+                        <h4 className="entry-title">
                           <a
                             className="entry-title-a"
                             href="blog-single-video-full.html"
@@ -227,7 +210,7 @@ export const UserProtection = () => {
                           </a>
                         </h4>
                       </header>
-                      <div class="entry-content">
+                      <div className="entry-content">
                         <p>
                           Un antivirus es un programa informático que tiene el
                           propósito de detectar y eliminar...
@@ -252,16 +235,16 @@ export const UserProtection = () => {
                   </article>
                 </div>
 
-                <div class="col-xl-4 col-md-6">
-                  <article class="vertical-item text-center content-padding padding-small hero-bg rounded rounded-image-top post type-post status-publish format-standard has-post-thumbnail">
-                    <div class="item-media post-thumbnail">
+                <div className="col-xl-4 col-md-6">
+                  <article className="vertical-item text-center content-padding padding-small hero-bg rounded rounded-image-top post type-post status-publish format-standard has-post-thumbnail">
+                    <div className="item-media post-thumbnail">
                       <a href="blog-single-full.html">
-                        <img src={img8} alt="" />
+                        <img src={img11} alt="" />
                       </a>
                     </div>
-                    <div class="item-content">
-                      <header class="entry-header d-block">
-                        <h4 class="entry-title">
+                    <div className="item-content">
+                      <header className="entry-header d-block">
+                        <h4 className="entry-title">
                           <a
                             className="entry-title-a"
                             href="blog-single-video-full.html"
@@ -270,14 +253,15 @@ export const UserProtection = () => {
                             Uso de redes inalámbricas en forma segura
                           </a>
                         </h4>
-                        <div class="entry-meta">
-                          <span class="screen-reader-text">Posted on</span>
+                        <div className="entry-meta">
+                          <span className="screen-reader-text">Posted on</span>
                         </div>
                       </header>
-                      <div class="entry-content">
+                      <div className="entry-content">
                         <p>
                           Las redes inalámbricas permiten que los dispositivos
-                          habilitados...
+                          habilitados con Wi-Fi, como computadoras portátiles y
+                          tablets, se conecten...
                         </p>
                       </div>
                       <button

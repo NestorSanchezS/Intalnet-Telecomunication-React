@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from "../assets/docs/tv.pdf";
+import pdf from "../assets/docs/MONTERIA.pdf";
 import pdf2 from "../assets/docs/seguridad_en_la_red.pdf";
 
 export const ButtonGrillTv = ({ name, plane }) => {
