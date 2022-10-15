@@ -32,10 +32,10 @@ export const InfoProduct = () => {
   };
   const { name, description, price, images } = product;
 
-  if (images == undefined || images.length == 0) {
-    return <p>Loading...</p>;
-  }
-  console.log(images[0].path);
+  // if (images == undefined || images.length == 0) {
+  //   return <p>Loading...</p>;
+  // }
+  // console.log(images[0].path);
 
   return (
     <>

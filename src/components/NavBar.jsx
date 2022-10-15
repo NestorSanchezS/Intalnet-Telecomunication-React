@@ -88,9 +88,9 @@ export const NavBar = () => {
                             </Link>
                           </li>
                           <li>
-                            <Link to="pqr">
+                            <a href="pqr">
                               Peticiones, Quejas y Reclamos (PQR)
-                            </Link>
+                            </a>
                           </li>
                           <li>
                             <a href="userprotection">Protección al usuario</a>
