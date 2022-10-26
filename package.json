@@ -17,7 +17,8 @@
     "react-head": "^3.4.2",
     "react-particles-js": "^3.6.0",
     "react-router-dom": "^6.3.0",
-    "react-tsparticles": "^2.2.4"
+    "react-tsparticles": "^2.2.4",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
