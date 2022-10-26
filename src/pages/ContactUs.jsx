@@ -1,8 +1,20 @@
 import React from "react";
+import { useFormik } from "formik";
 import { SERVICES } from "../constans";
 import { HeaderPage } from "../components/HeaderPage";
 
 export const ContactUs = () => {
+  const formik = useFormik({
+    initialValues: {
+      services: "",
+      address: "",
+      name: "",
+      phone: "",
+      email: "",
+      message: "",
+    },
+    onSubmit: (values) => console.log(values),
+  });
   return (
     <>
       <HeaderPage message="Contactenos" />
@@ -16,8 +28,8 @@ export const ContactUs = () => {
               </h5>
               <div className="divider-50 d-none d-xl-block"></div>
               <form
+                onSubmit={formik.handleSubmit}
                 className="contact-form c-mb-10 c-mb-md-20 c-gutter-20 text-center text-md-left"
-                method="post"
                 action="/"
               >
                 <div className="row">
@@ -28,7 +40,9 @@ export const ContactUs = () => {
                       <select
                         className="form-control"
                         id="select"
-                        name="service"
+                        name="services"
+                        onChange={formik.handleChange}
+                        value={formik.values.services}
                       >
                         {SERVICES.map((service) => (
                           <option key={service.id}>{service.name}</option>
@@ -48,6 +62,8 @@ export const ContactUs = () => {
                         id="address"
                         className="form-control"
                         placeholder="Dirección"
+                        onChange={formik.handleChange}
+                        value={formik.values.address}
                       />
                     </div>
                   </div>
@@ -66,6 +82,8 @@ export const ContactUs = () => {
                         id="name"
                         className="form-control"
                         placeholder="Nombres"
+                        onChange={formik.handleChange}
+                        value={formik.values.name}
                       />
                     </div>
                   </div>
@@ -80,8 +98,9 @@ export const ContactUs = () => {
                         name="phone"
                         id="phone"
                         className="form-control"
-                        placeholder="Numero celular
-                        "
+                        placeholder="Numero celular"
+                        onChange={formik.handleChange}
+                        value={formik.values.phone}
                       />
                     </div>
                   </div>
@@ -100,6 +119,8 @@ export const ContactUs = () => {
                         id="email"
                         className="form-control"
                         placeholder="E-mail"
+                        onChange={formik.handleChange}
+                        value={formik.values.email}
                       />
                     </div>
                   </div>
@@ -116,6 +137,8 @@ export const ContactUs = () => {
                         id="message"
                         className="form-control"
                         placeholder="Tu mensaje"
+                        onChange={formik.handleChange}
+                        value={formik.values.message}
                       ></textarea>
                     </div>
                   </div>
