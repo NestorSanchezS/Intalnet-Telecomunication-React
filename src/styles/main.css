@@ -10466,6 +10466,22 @@ h5.special-heading {
 	margin-top: -5px;
 }
 
+/* formulario */
+input.input-error,
+select.input-error {
+	border-color: #fc8181
+}
+
+.error{
+	font-size: 10px;
+	color: #fc8181;
+	text-align: left;
+}
+
+.button_submit-disabled:disabled {
+	opacity: 0.35;
+}
+
 .special-heading + p {
 	color: #4c4c4c;
 	font-size: 12px;
