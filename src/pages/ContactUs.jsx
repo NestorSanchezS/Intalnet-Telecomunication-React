@@ -12,14 +12,6 @@ const onSubmit = async (values, actions) => {
 };
 
 export const ContactUs = () => {
-  // const {  } =
-  //   useFormik({
-  //     initialValues: {},
-  //     validationSchema: formContactusSchema,
-  //     onSubmit,
-  //   });
-  // console.log(errors);
-
   return (
     <>
       <HeaderPage message="Contactenos" />

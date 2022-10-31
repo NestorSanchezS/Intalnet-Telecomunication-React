@@ -1,5 +1,14 @@
 import React from "react";
+import { Formik } from "formik";
 import { HeaderPage } from "../components/HeaderPage";
+import { formPqrSchema } from "../schemas";
+
+const onSubmit = async (values, actions) => {
+  console.log(values);
+  console.log(actions);
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  actions.resetForm();
+};
 
 export const Pqr = () => {
   return (
@@ -9,119 +18,180 @@ export const Pqr = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-8 animate" data-animation="scaleAppear">
-              <form
-                className="contact-form c-mb-15 c-gutter-15"
-                method="post"
-                action="/"
+              <Formik
+                initialValues={{
+                  namepqr: "",
+                  phonepqr: "",
+                  emailpqr: "",
+                  addresspqr: "",
+                  messagepqr: "",
+                }}
+                validationSchema={formPqrSchema}
+                onSubmit={onSubmit}
               >
-                <div className="row">
-                  <div className="col-sm-12">
-                    <h4>Peticiones, Quejas y Reclamos</h4>
-                  </div>
-                </div>
+                {({
+                  isSubmitting,
+                  touched,
+                  handleSubmit,
+                  errors,
+                  getFieldProps,
+                }) => (
+                  <form
+                    onSubmit={handleSubmit}
+                    className="contact-form c-mb-15 c-gutter-15"
+                    action="/"
+                  >
+                    <div className="row">
+                      <div className="col-sm-12">
+                        <h4>Peticiones, Quejas y Reclamos</h4>
+                      </div>
+                    </div>
 
-                <div className="row">
-                  <div className="col-sm-6">
-                    <div className="form-group has-placeholder">
-                      <label htmlFor="name">
-                        Nombres <span className="required">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        aria-required="true"
-                        size="30"
-                        name="name"
-                        id="name"
-                        className="form-control"
-                        placeholder="Nombres"
-                      />
+                    <div className="row">
+                      <div className="col-sm-6">
+                        <div className="form-group has-placeholder">
+                          <label htmlFor="namepqr">
+                            Nombres <span className="required">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            aria-required="true"
+                            size="30"
+                            name="namepqr"
+                            id="namepqr"
+                            className={`form-control ${
+                              errors.namepqr && touched.namepqr
+                                ? "input-error"
+                                : ""
+                            }`}
+                            placeholder="Nombres"
+                            {...getFieldProps("namepqr")}
+                          />
+                          {errors.namepqr && touched.namepqr && (
+                            <p className="error">{errors.namepqr}</p>
+                          )}
+                        </div>
+                      </div>
+                      <div className="col-sm-6">
+                        <div className="form-group has-placeholder">
+                          <label htmlFor="phonepqr">
+                            celular<span className="required">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            aria-required="true"
+                            size="30"
+                            name="phonepqr"
+                            id="phone"
+                            className={`form-control ${
+                              errors.phonepqr && touched.phonepqr
+                                ? "input-error"
+                                : ""
+                            }`}
+                            placeholder="Celular"
+                            {...getFieldProps("phonepqr")}
+                          />
+                          {errors.phonpqr && touched.phonepqr && (
+                            <p className="error">{errors.phonepqr}</p>
+                          )}
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="form-group has-placeholder">
-                      <label htmlFor="phone">
-                        celular<span className="required">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        aria-required="true"
-                        size="30"
-                        name="phone"
-                        id="phone"
-                        className="form-control"
-                        placeholder="Celular"
-                      />
-                    </div>
-                  </div>
-                </div>
 
-                <div className="row">
-                  <div className="col-sm-6">
-                    <div className="form-group has-placeholder">
-                      <label htmlFor="email">
-                        Email<span className="required">*</span>
-                      </label>
-                      <input
-                        type="email"
-                        aria-required="true"
-                        size="30"
-                        name="email"
-                        id="email"
-                        className="form-control"
-                        placeholder="Email"
-                      />
+                    <div className="row">
+                      <div className="col-sm-6">
+                        <div className="form-group has-placeholder">
+                          <label htmlFor="emailpqr">
+                            Email<span className="required">*</span>
+                          </label>
+                          <input
+                            type="email"
+                            aria-required="true"
+                            size="30"
+                            name="emailpqr"
+                            id="email"
+                            className={`form-control ${
+                              errors.emailpqr && touched.emailpqr
+                                ? "input-error"
+                                : ""
+                            }`}
+                            placeholder="Email"
+                            {...getFieldProps("emailpqr")}
+                          />
+                          {errors.emailpqr && touched.emailpqr && (
+                            <p className="error">{errors.emailpqr}</p>
+                          )}
+                        </div>
+                      </div>
+                      <div className="col-sm-6">
+                        <div className="form-group has-placeholder">
+                          <label htmlFor="addresspqr">
+                            Dirección<span className="required">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            aria-required="true"
+                            size="30"
+                            name="addresspqr"
+                            id="addresspqr"
+                            className={`form-control ${
+                              errors.addresspqr && touched.addresspqr
+                                ? "input-error"
+                                : ""
+                            }`}
+                            placeholder="Dirección residencia"
+                            {...getFieldProps("addresspqr")}
+                          />
+                          {errors.addresspqr && touched.addresspqr && (
+                            <p className="error">{errors.addresspqr}</p>
+                          )}
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="form-group has-placeholder">
-                      <label htmlFor="subject">
-                        Dirección<span className="required">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        aria-required="true"
-                        size="30"
-                        name="subject"
-                        id="subject"
-                        className="form-control"
-                        placeholder="Dirección residencia"
-                      />
-                    </div>
-                  </div>
-                </div>
 
-                <div className="row">
-                  <div className="col-sm-12">
-                    <div className="form-group has-placeholder">
-                      <label htmlFor="message">PQR</label>
-                      <textarea
-                        aria-required="true"
-                        rows="6"
-                        cols="45"
-                        name="message"
-                        id="message"
-                        className="form-control"
-                        placeholder="PQR"
-                      ></textarea>
+                    <div className="row">
+                      <div className="col-sm-12">
+                        <div className="form-group has-placeholder">
+                          <label htmlFor="messagepqr">PQR</label>
+                          <textarea
+                            aria-required="true"
+                            rows="6"
+                            cols="45"
+                            name="messagepqr"
+                            id="messagepqr"
+                            className={`form-control ${
+                              errors.messagepqr && touched.messagepqr
+                                ? "input-error"
+                                : ""
+                            }`}
+                            placeholder="PQR"
+                            {...getFieldProps("messagepqr")}
+                          ></textarea>
+                          {errors.messagepqr && touched.messagepqr && (
+                            <p className="error">{errors.messagepqr}</p>
+                          )}
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
 
-                <div className="row mt-20">
-                  <div className="col-sm-12">
-                    <div className="form-group has-placeholder">
-                      <button
-                        type="submit"
-                        id="contact_form_submit"
-                        name="contact_submit"
-                        className="btn btn-maincolor"
-                      >
-                        <span>Enviar Mensaje</span>
-                      </button>
+                    <div className="row mt-20">
+                      <div className="col-sm-12">
+                        <div className="form-group has-placeholder">
+                          <button
+                            type="submit"
+                            id="contact_form_submit"
+                            name="contact_submit"
+                            className="btn btn-maincolor"
+                            disabled={isSubmitting}
+                          >
+                            <span>Enviar Mensaje</span>
+                          </button>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </form>
+                  </form>
+                )}
+              </Formik>
             </div>
 
             <div className="divider-40 d-block d-lg-none"></div>
