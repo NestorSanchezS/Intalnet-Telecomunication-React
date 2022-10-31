@@ -1,4 +1,5 @@
 import React from "react";
+import { HeaderPage } from "../components/HeaderPage";
 
 export const NotFound = () => {
   return (
@@ -9,14 +10,14 @@ export const NotFound = () => {
           <div className="row">
             <div className="d-none d-lg-block divider-70"></div>
 
-            <div clasNames="col-sm-12 text-center">
-              <header className="page-header">
+            <div className="col-sm-12 text-center ">
+              <header className="page-header ">
                 <h1>404</h1>
                 <h3>Oops! No se pudo encontrar esta página!</h3>
-                <h6>
+                <h5>
                   Lo sentimos, pero la pagina que busca no existe, ha sido
                   eliminada o sa le cambió el nombre
-                </h6>
+                </h5>
               </header>
 
               <div className="page-content">

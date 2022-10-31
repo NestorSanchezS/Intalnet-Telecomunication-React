@@ -10,6 +10,7 @@ import { TechnologyAccessories } from "../pages/TechnologyAccessories";
 import { InfoProduct } from "../components/InfoProduct";
 import { UserProtection } from "../pages/UserProtection";
 import { Pqr } from "../pages/Pqr";
+import { NotFound } from "../pages/NotFound";
 
 export const AppRoutes = () => {
   return (
@@ -28,6 +29,7 @@ export const AppRoutes = () => {
           <Route path="infoproduct/:id" element={<InfoProduct />} />
           <Route path="pqr" element={<Pqr />} />
           <Route path="userprotection" element={<UserProtection />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
