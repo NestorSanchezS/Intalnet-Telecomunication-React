@@ -11,6 +11,7 @@ import { InfoProduct } from "../components/InfoProduct";
 import { UserProtection } from "../pages/UserProtection";
 import { Pqr } from "../pages/Pqr";
 import { NotFound } from "../pages/NotFound";
+import { InternetSano } from "../components/InternetSano";
 
 export const AppRoutes = () => {
   return (
@@ -21,6 +22,7 @@ export const AppRoutes = () => {
           <Route path="ourcompany" element={<OurCompany />} />
           <Route path="city/:id" element={<CityService />} />
           <Route path="contactus" element={<ContactUs />} />
+          <Route path="internetsano" element={<InternetSano />} />
           <Route path="frequentquestions" element={<FrequentQuestions />} />
           <Route
             path="technologyaccessories"

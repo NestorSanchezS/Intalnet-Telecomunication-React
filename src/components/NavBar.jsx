@@ -99,6 +99,10 @@ export const NavBar = () => {
                       </li>
 
                       <li>
+                        <Link to="/internetsano">Internet Sano</Link>
+                      </li>
+
+                      <li>
                         <Link to="/contactus">Contactenos</Link>
                       </li>
                     </ul>
