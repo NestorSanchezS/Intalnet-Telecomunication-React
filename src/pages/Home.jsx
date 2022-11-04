@@ -6,6 +6,7 @@ import service02 from "../assets/images/service/02.jpg";
 import service03 from "../assets/images/service/03.jpg";
 import service04 from "../assets/images/service/04.jpg";
 import { TargetServicesBanner } from "../components/TargetServicesBanner";
+import { SpeedTest } from "../components/SpeedTest";
 
 export const Home = () => {
   return (
@@ -171,6 +172,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      <SpeedTest />
     </>
   );
 };

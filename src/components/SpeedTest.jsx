@@ -1,8 +1,12 @@
 import React from "react";
+import img1 from "../assets/images/gallery/40.jpg";
+import img2 from "../assets/images/gallery/41.jpg";
+import img3 from "../assets/images/gallery/43.jpg";
+import img4 from "../assets/images/gallery/44.png";
 
 export const SpeedTest = () => {
   return (
-    <section className="ls s-py-80 s-py-lg-120 s-py-xl-160">
+    <section className="mb-5">
       <div className="container">
         <div className="row c-gutter-60">
           <main className="offset-lg-1 col-lg-10">
@@ -10,12 +14,12 @@ export const SpeedTest = () => {
               <div className="row">
                 <div className="col-xl-4 col-lg-5 col-md-5">
                   <div className="item-media cover-image">
-                    <img src="images/gallery/08.jpg" alt="" />
+                    <img src={img3} alt="" />
                     <div className="media-links">
                       <a
                         className="abs-link"
                         title=""
-                        href="event-single-full.html"
+                        href="https://www.speedtest.net/es"
                       ></a>
                     </div>
                   </div>
@@ -23,21 +27,27 @@ export const SpeedTest = () => {
 
                 <div className="col-xl-8 col-lg-7 col-md-6">
                   <div className="item-content">
-                    <h5>
-                      <a href="event-single-full.html">Magna aliquyam erased</a>
-                    </h5>
+                    <h1>
+                      <span
+                        href="event-single-full.html"
+                        className="text-center widget-title"
+                      >
+                        TEST DE VELOCIDAD
+                      </span>
+                    </h1>
 
-                    <p className="item-meta color-darkgrey">
-                      <i className="fa fa-calendar color-main"></i>
-                      <span>March 12, 2018</span>
-                      <i className="fa fa-clock-o color-main"></i>
-                      <span>01:15 pm - 04:30 pm</span>
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      In dictum bibendum dui, nec malesuada urna laoreet non.
-                      Maecenas id semper nisi.
-                    </p>
+                    <h5 className="mt-5">
+                      Si quieres saber que ancho de banda tienes contratado haz
+                      click aquí
+                    </h5>
+                  </div>
+                  <div className="plan-button">
+                    <a
+                      href="https://www.speedtest.net/es"
+                      className="btn btn-maincolor"
+                    >
+                      <span>Realizar test</span>
+                    </a>
                   </div>
                 </div>
               </div>
