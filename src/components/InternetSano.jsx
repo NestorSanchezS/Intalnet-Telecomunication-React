@@ -95,13 +95,13 @@ export const InternetSano = () => {
                     <a
                       className="abs-link"
                       title=""
-                      href="service-single.html"
+                      href="https://www.mintic.gov.co/"
                     ></a>
                   </div>
                 </div>
                 <div className="item-content">
                   <h5 className="service-title">
-                    <a href="service-single.html">Ministerio TIC</a>
+                    <a href="https://www.mintic.gov.co/">Ministerio TIC</a>
                   </h5>
 
                   <p>
@@ -110,6 +110,8 @@ export const InternetSano = () => {
                     de la prevención de la pornografía infantil y juvenil en
                     Internet.
                   </p>
+                  <h6>Teléfonos:</h6>
+                  <p>3443460 en Bogotá</p>
                 </div>
               </div>
             </div>
@@ -121,21 +123,18 @@ export const InternetSano = () => {
                     <a
                       className="abs-link"
                       title=""
-                      href="service-single.html"
+                      href="https://www.fiscalia.gov.co"
                     ></a>
                   </div>
                 </div>
                 <div className="item-content">
                   <h5 className="service-title">
-                    <a href="service-single.html">
+                    <a href="https://www.fiscalia.gov.co">
                       FISCALÍA GENERAL DE LA NACIÓN
                     </a>
                   </h5>
-
-                  <p>
-                    In a mauris leo. Etiam suscipit ex sodales eros volutpat, at
-                    consequat neque sollicitudin.
-                  </p>
+                  <h5>Telefono</h5>
+                  <p>01 8000 916 111</p>
                 </div>
               </div>
             </div>
@@ -147,21 +146,19 @@ export const InternetSano = () => {
                     <a
                       className="abs-link"
                       title=""
-                      href="service-single.html"
+                      href="https://www.icbf.gov.co/"
                     ></a>
                   </div>
                 </div>
                 <div className="item-content">
                   <h5 className="service-title">
-                    <a href="service-single.html">
+                    <a href="https://www.icbf.gov.co/">
                       INSTITUTO COLOMBIANO DE BIENESTAR FAMILIAR: ICBF
                     </a>
                   </h5>
 
-                  <p>
-                    Duis ut justo in sem suscipit mollis. Aliquam gravida sem
-                    quis neque finibus sollicitudin etiam.
-                  </p>
+                  <h5>Linea gratuita nacional: Prevención de abuso sexual:</h5>
+                  <p>(57 1) 01 8000 112 440</p>
                 </div>
               </div>
             </div>
