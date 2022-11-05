@@ -16242,6 +16242,9 @@ body.active-side-header.slide-right .page_header_side {
 	margin-top: -90px;
 	
 }
+.no-text-decoration {
+	text-decoration: none;
+}
 
 
 /*

@@ -3,15 +3,6 @@ import React, { createContext, useEffect, useState } from "react";
 export const IntalnetContext = createContext();
 
 export const IntalnetProvider = ({ children }) => {
-  const [dataFormContactus, setDataFormContactus] = useState({
-    service: "",
-    address: "",
-    name: "",
-    phone: "",
-    email: "",
-    Message: "",
-  });
-
   const [productCardApi, setProductCardApi] = useState([]);
 
   useEffect(() => {
@@ -33,9 +24,7 @@ export const IntalnetProvider = ({ children }) => {
   );
 
   return (
-    <IntalnetContext.Provider
-      value={{ dataFormContactus, topProduct, productCardApi }}
-    >
+    <IntalnetContext.Provider value={{ topProduct, productCardApi }}>
       {children}
     </IntalnetContext.Provider>
   );

@@ -101,7 +101,12 @@ export const InternetSano = () => {
                 </div>
                 <div className="item-content">
                   <h5 className="service-title">
-                    <a href="https://www.mintic.gov.co/">Ministerio TIC</a>
+                    <a
+                      href="https://www.mintic.gov.co/"
+                      className="no-text-decoration"
+                    >
+                      Ministerio TIC
+                    </a>
                   </h5>
 
                   <p>
@@ -129,7 +134,10 @@ export const InternetSano = () => {
                 </div>
                 <div className="item-content">
                   <h5 className="service-title">
-                    <a href="https://www.fiscalia.gov.co">
+                    <a
+                      href="https://www.fiscalia.gov.co"
+                      className="no-text-decoration"
+                    >
                       FISCALÍA GENERAL DE LA NACIÓN
                     </a>
                   </h5>
@@ -152,7 +160,10 @@ export const InternetSano = () => {
                 </div>
                 <div className="item-content">
                   <h5 className="service-title">
-                    <a href="https://www.icbf.gov.co/">
+                    <a
+                      href="https://www.icbf.gov.co/"
+                      className="no-text-decoration"
+                    >
                       INSTITUTO COLOMBIANO DE BIENESTAR FAMILIAR: ICBF
                     </a>
                   </h5>
