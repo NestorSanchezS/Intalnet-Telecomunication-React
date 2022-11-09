@@ -4,42 +4,18 @@ import { HeaderPage } from "../components/HeaderPage";
 import { formPqrSchema } from "../schemas";
 import emailjs from "@emailjs/browser";
 
-// const onSubmit = async (values, actions, event) => {
-//   console.log(values);
-//   console.log(actions);
-//   emailjs
-//     .sendForm(
-//       "service_mgz5i9p",
-//       "template_4ous6pd",
-//       event.target,
-//       "0x7MB6OO-x4riXcuL"
-//     )
-//     .then((response) => console.log(response))
-//     .catch((error) => console.log(error));
-//   await new Promise((resolve) => setTimeout(resolve, 1000));
-//   actions.resetForm();
-// };
+const onSubmit = async (values, actions) => {
+  console.log({ values });
+  console.log(actions);
+  emailjs
+    .send("service_mgz5i9p", "template_4ous6pd", values, "0x7MB6OO-x4riXcuL")
+    .then((response) => console.log(response))
+    .catch((error) => console.log(error));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  actions.resetForm();
+};
 
 export const Pqr = () => {
-  let Form = {
-    namepqr: "",
-    phonepqr: "",
-    emailpqr: "",
-    addresspqr: "",
-    messagepqr: "",
-  };
-  const sendEmail = async (event) => {
-    event.preventDefault();
-    emailjs
-      .sendForm(
-        "service_mgz5i9p",
-        "template_4ous6pd",
-        event.target,
-        "0x7MB6OO-x4riXcuL"
-      )
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error));
-  };
   return (
     <>
       <HeaderPage message="PQR´S" />
@@ -48,9 +24,15 @@ export const Pqr = () => {
           <div className="row">
             <div className="col-lg-8 animate" data-animation="scaleAppear">
               <Formik
-                initialValues={Form}
+                initialValues={{
+                  namepqr: "",
+                  phonepqr: "",
+                  emailpqr: "",
+                  addresspqr: "",
+                  messagepqr: "",
+                }}
                 validationSchema={formPqrSchema}
-                onSubmit={sendEmail}
+                onSubmit={onSubmit}
               >
                 {({
                   isSubmitting,
@@ -60,7 +42,7 @@ export const Pqr = () => {
                   getFieldProps,
                 }) => (
                   <form
-                    onSubmit={sendEmail}
+                    onSubmit={handleSubmit}
                     className="contact-form c-mb-15 c-gutter-15"
                     action="/"
                   >

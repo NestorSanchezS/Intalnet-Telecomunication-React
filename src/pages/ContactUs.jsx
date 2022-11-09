@@ -7,6 +7,11 @@ import { formContactusSchema } from "../schemas";
 const onSubmit = async (values, actions) => {
   console.log(values);
   console.log(actions);
+  emailjs
+    .send("service_mgz5i9p", "template_4ous6pd", values, "0x7MB6OO-x4riXcuL")
+    .then((response) => console.log(response))
+    .catch((error) => console.log(error));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   await new Promise((resolve) => setTimeout(resolve, 1000));
   actions.resetForm();
 };
