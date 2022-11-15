@@ -96,6 +96,7 @@ export const InternetSano = () => {
                       className="abs-link"
                       title=""
                       href="https://www.mintic.gov.co/"
+                      target="_blank"
                     ></a>
                   </div>
                 </div>
@@ -104,6 +105,7 @@ export const InternetSano = () => {
                     <a
                       href="https://www.mintic.gov.co/"
                       className="no-text-decoration"
+                      target="_blank"
                     >
                       Ministerio TIC
                     </a>
@@ -129,6 +131,7 @@ export const InternetSano = () => {
                       className="abs-link"
                       title=""
                       href="https://www.fiscalia.gov.co"
+                      target="_blank"
                     ></a>
                   </div>
                 </div>
@@ -137,6 +140,7 @@ export const InternetSano = () => {
                     <a
                       href="https://www.fiscalia.gov.co"
                       className="no-text-decoration"
+                      target="_blank"
                     >
                       FISCALÍA GENERAL DE LA NACIÓN
                     </a>
@@ -155,6 +159,7 @@ export const InternetSano = () => {
                       className="abs-link"
                       title=""
                       href="https://www.icbf.gov.co/"
+                      target="_blank"
                     ></a>
                   </div>
                 </div>
@@ -163,6 +168,7 @@ export const InternetSano = () => {
                     <a
                       href="https://www.icbf.gov.co/"
                       className="no-text-decoration"
+                      target="_blank"
                     >
                       INSTITUTO COLOMBIANO DE BIENESTAR FAMILIAR: ICBF
                     </a>

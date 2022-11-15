@@ -5,10 +5,10 @@ import { formPqrSchema } from "../schemas";
 import emailjs from "@emailjs/browser";
 
 const onSubmit = async (values, actions) => {
-  console.log({ values });
-  console.log(actions);
+  // console.log({ values });
+  // console.log(actions);
   emailjs
-    .send("service_mgz5i9p", "template_4ous6pd", values, "0x7MB6OO-x4riXcuL")
+    .send("service_7hlj17d", "template_dozp72v", values, "9lX7hXXub4LjBAc_z")
     .then((response) => console.log(response))
     .catch((error) => console.log(error));
   await new Promise((resolve) => setTimeout(resolve, 1000));

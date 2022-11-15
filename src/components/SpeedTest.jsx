@@ -18,8 +18,8 @@ export const SpeedTest = () => {
                     <div className="media-links">
                       <a
                         className="abs-link"
-                        title=""
                         href="https://www.speedtest.net/es"
+                        target="_blank"
                       ></a>
                     </div>
                   </div>
@@ -45,6 +45,7 @@ export const SpeedTest = () => {
                     <a
                       href="https://www.speedtest.net/es"
                       className="btn btn-maincolor"
+                      target="_blank"
                     >
                       <span>Realizar test</span>
                     </a>
