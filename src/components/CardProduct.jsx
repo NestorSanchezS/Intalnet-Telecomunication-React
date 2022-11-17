@@ -2,6 +2,7 @@ import React from "react";
 import img01 from "../assets/images/shop/13.jpg";
 export const CardProduct = ({ product }) => {
   const { id, name, price, previous_price, images, categories } = product;
+
   const width_card = {
     width: "80%",
   };
@@ -44,9 +45,9 @@ export const CardProduct = ({ product }) => {
             className="btn btn-maincolor  small-btn product_type_simple add_to_cart_button"
           >
             <span>
-              <span className="no-text-decoration" href={`/infoproduct/${id}`}>
-                Más información
-              </span>
+              <a className="no-text-decoration" href={`/infoproduct/${id}`}>
+                <span> Más información</span>
+              </a>
             </span>
           </span>
         </div>
