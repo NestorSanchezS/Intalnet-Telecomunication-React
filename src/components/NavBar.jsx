@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import messenger from "../assets/images/messeger.png";
 import intalnet from "../assets/INTALNET-TELECOMUNICACIONES.png";
 import { LinkCity } from "./LinkCity";
+import "../styles/bootstrap.min.css";
+import "../styles/bootstrap.css";
 
 export const NavBar = () => {
   const [dataCity, setDataCity] = useState([]);
