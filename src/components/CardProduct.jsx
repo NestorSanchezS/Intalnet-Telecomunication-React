@@ -41,10 +41,12 @@ export const CardProduct = ({ product }) => {
           <span
             rel="nofollow"
             href="shop-cart.html"
-            className="btn btn-maincolor small-btn product_type_simple add_to_cart_button"
+            className="btn btn-maincolor  small-btn product_type_simple add_to_cart_button"
           >
             <span>
-              <a href={`/infoproduct/${id}`}>Más información</a>
+              <span className="no-text-decoration" href={`/infoproduct/${id}`}>
+                Más información
+              </span>
             </span>
           </span>
         </div>

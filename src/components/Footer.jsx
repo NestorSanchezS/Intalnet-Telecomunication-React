@@ -125,7 +125,7 @@ export const Footer = () => {
           <div className="row align-items-center">
             <div className="divider-15 d-none d-lg-block"></div>
             <div className="col-md-12 text-center">
-              <p>
+              <p className="copyright-color">
                 &copy; Copyright <span className="copyright_year">2022</span>
                 Intalnet Desarrollador por Nestor Sanchez
               </p>

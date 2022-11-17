@@ -335,6 +335,7 @@ button:active,
 input[type="submit"]:active {
 	position: relative;
 	top: 1px !important;
+	text-decoration: none;
 }
 
 hr {
@@ -1007,6 +1008,7 @@ form .has-placeholder.textarea label + [class*="fa-"] {
 		min-width: auto;
 		padding: 15px 10px;
 	}
+	/*nav uno encima del otro*/
 	.nav{
 		display:flex;
 		flex-direction: column;
@@ -17672,6 +17674,12 @@ img.absolute_image {
 		min-width: 430px;
 	}
 }
+/*color a las letras de copyright*/
+.text-white, .copyright-color{
+	color:black
+}
+
+
 
 .page_title,
 .copyright-bg,

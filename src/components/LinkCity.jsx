@@ -5,7 +5,9 @@ export const LinkCity = ({ city }) => {
   const { id, name } = city;
   return (
     <li>
-      <a href={`/city/${id}`}>{name}</a>
+      <a className="no-text-decoration" href={`/city/${id}`}>
+        {name}
+      </a>
     </li>
   );
 };
