@@ -16251,10 +16251,13 @@ body.active-side-header.slide-right .page_header_side {
 /*quitar linea a anclasy color letra*/
 .no-text-decoration {
 	text-decoration: none;
-	color:white
+
 }
 
-.no-text-decoration:hover{
+.text-color-white-hb{
+	color: white;
+}
+.text-color-white-hb:hover{
 	color:black
 }
 

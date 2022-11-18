@@ -44,7 +44,7 @@ export const SpeedTest = () => {
                   <div className="plan-button">
                     <a
                       href="https://www.speedtest.net/es"
-                      className="btn btn-maincolor"
+                      className="btn btn-maincolor no-text-decoration"
                       target="_blank"
                     >
                       <span>Realizar test</span>

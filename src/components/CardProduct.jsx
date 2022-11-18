@@ -44,7 +44,10 @@ export const CardProduct = ({ product }) => {
             className="btn btn-maincolor small-btn product_type_simple add_to_cart_button"
           >
             <span>
-              <a href={`/infoproduct/${id}`} className="no-text-decoration">
+              <a
+                href={`/infoproduct/${id}`}
+                className="no-text-decoration text-color-white-hb"
+              >
                 Más información
               </a>
             </span>

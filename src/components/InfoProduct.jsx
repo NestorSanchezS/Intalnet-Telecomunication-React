@@ -32,6 +32,23 @@ export const InfoProduct = () => {
   };
   const { name, description, price, images } = product;
 
+  let imgPath = img01;
+  if (images?.length > 1) {
+    imgPath = `http://localhost:3300${images[0].path}`;
+  }
+  let imgPath2 = img02;
+  if (images?.length > 1) {
+    imgPath2 = `http://localhost:3300${images[1].path}`;
+  }
+  let imgPath3 = img03;
+  if (images?.length > 1) {
+    imgPath3 = `http://localhost:3300${images[2].path}`;
+  }
+  let imgPath4 = img04;
+  if (images?.length > 1) {
+    imgPath4 = `http://localhost:3300${images[3].path}`;
+  }
+
   // if (images == undefined || images.length == 0) {
   //   return <p>Loading...</p>;
   // }
@@ -50,53 +67,53 @@ export const InfoProduct = () => {
                     {/* {images?.map((img) => (
                       <ImgInfoProduct key={img.id} img={img} />
                     ))} */}
-                    <div data-thumb={img01}>
-                      <a href={img01}>
+                    <div data-thumb={imgPath}>
+                      <a href={imgPath}>
                         <img
-                          src={img01}
+                          src={imgPath}
                           alt="Imagen de dispositivo"
                           data-caption=""
-                          data-src={img01}
-                          data-large_image={img01}
+                          data-src={imgPath}
+                          data-large_image={imgPath}
                           data-large_image_width="1000"
                           data-large_image_height="1000"
                         />
                       </a>
                     </div>
-                    <div data-thumb={img02}>
-                      <a href={img02}>
+                    <div data-thumb={imgPath2}>
+                      <a href={imgPath2}>
                         <img
-                          src={img02}
+                          src={imgPath2}
                           alt="Imagen de dispositivo"
                           data-caption=""
-                          data-src={img02}
-                          data-large_image={img02}
+                          data-src={imgPath2}
+                          data-large_image={imgPath2}
                           data-large_image_width="1000"
                           data-large_image_height="1000"
                         />
                       </a>
                     </div>
-                    <div data-thumb={img03}>
-                      <a href={img03}>
+                    <div data-thumb={imgPath3}>
+                      <a href={imgPath3}>
                         <img
-                          src={img03}
+                          src={imgPath3}
                           alt="Imagen de dispositivo"
                           data-caption=""
-                          data-src={img03}
-                          data-large_image={img03}
+                          data-src={imgPath3}
+                          data-large_image={imgPath3}
                           data-large_image_width="1000"
                           data-large_image_height="1000"
                         />
                       </a>
                     </div>
-                    <div data-thumb={img04}>
-                      <a href={img04}>
+                    <div data-thumb={imgPath4}>
+                      <a href={imgPath4}>
                         <img
-                          src={img04}
+                          src={imgPath4}
                           alt="Imagen de dispositivo"
                           data-caption=""
-                          data-src={img04}
-                          data-large_image={img04}
+                          data-src={imgPath4}
+                          data-large_image={imgPath4}
                           data-large_image_width="1000"
                           data-large_image_height="1000"
                         />
