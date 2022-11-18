@@ -1007,6 +1007,11 @@ form .has-placeholder.textarea label + [class*="fa-"] {
 		min-width: auto;
 		padding: 15px 10px;
 	}
+	/*nav encima una de otra*/
+	.nav{
+		display:flex;
+		flex-direction: column;
+	}
 }
 
 .small-tabs .nav-link {
