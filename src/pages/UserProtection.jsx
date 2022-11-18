@@ -159,11 +159,11 @@ export const UserProtection = () => {
                   </article>
                 </div>
 
-                <div className="col-xl-4 col-md-6">
+                {/* <div className="col-xl-4 col-md-6">
                   <article className="cover-image ds s-overlay post type-post status-publish format-quote has-post-thumbnail">
                     <div className="post-thumbnail">
                       <a href="blog-single-full.html">
-                        <img src={img7} alt="" />
+                        <img src={img12} alt="" />
                       </a>
                     </div>
                     <header className="entry-header">
@@ -188,7 +188,7 @@ export const UserProtection = () => {
                       </div>
                     </div>
                   </article>
-                </div>
+                </div> */}
 
                 <div className="col-xl-4 col-md-6">
                   <article className="vertical-item text-center content-padding padding-small hero-bg rounded rounded-image-top post type-post status-publish format-standard has-post-thumbnail">
