@@ -16247,8 +16247,15 @@ body.active-side-header.slide-right .page_header_side {
 	margin-top: -90px;
 	
 }
+
+/*quitar linea a anclasy color letra*/
 .no-text-decoration {
 	text-decoration: none;
+	color:white
+}
+
+.no-text-decoration:hover{
+	color:black
 }
 
 
