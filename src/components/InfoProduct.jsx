@@ -64,9 +64,6 @@ export const InfoProduct = () => {
               <div className="product">
                 <div className="images" data-columns="4">
                   <figure>
-                    {/* {images?.map((img) => (
-                      <ImgInfoProduct key={img.id} img={img} />
-                    ))} */}
                     <div data-thumb={imgPath}>
                       <a href={imgPath}>
                         <img
