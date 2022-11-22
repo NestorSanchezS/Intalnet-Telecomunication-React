@@ -1,6 +1,6 @@
 import React from "react";
 import pdf from "../assets/docs/MONTERIA.pdf";
-import pdf2 from "../assets/docs/seguridad_en_la_red.pdf";
+import pdf2 from "../assets/docs/VALENCIA_TIERRALTA.pdf";
 
 export const ButtonGrillTv = ({ name, plane }) => {
   const typeTvChannels = plane?.map((service) =>

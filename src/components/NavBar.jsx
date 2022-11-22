@@ -42,10 +42,14 @@ export const NavBar = () => {
                   <nav className="top-nav">
                     <ul className="nav sf-menu">
                       <li className="active">
-                        <a href="/">Inicio</a>
+                        <a className="no-text-decoration" href="/">
+                          Inicio
+                        </a>
                       </li>
                       <li>
-                        <Link to="/ourcompany">Nuestra Empresa</Link>
+                        <Link className="no-text-decoration" to="/ourcompany">
+                          Nuestra Empresa
+                        </Link>
                       </li>
 
                       <li>
@@ -99,11 +103,15 @@ export const NavBar = () => {
                       </li>
 
                       <li>
-                        <Link to="/internetsano">Internet Sano</Link>
+                        <Link className="no-text-decoration" to="/internetsano">
+                          Internet Sano
+                        </Link>
                       </li>
 
                       <li>
-                        <Link to="/contactus">Contactenos</Link>
+                        <Link className="no-text-decoration" to="/contactus">
+                          Contactenos
+                        </Link>
                       </li>
                     </ul>
                   </nav>
