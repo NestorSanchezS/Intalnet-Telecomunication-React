@@ -6,7 +6,28 @@ import { TopProducts } from "../components/TopProducts";
 import { useIntalnetContext } from "../hooks/useIntalnetContext";
 
 export const TechnologyAccessories = () => {
-  const { productCardApi, topProduct } = useIntalnetContext();
+  const {
+    productCardApi,
+    setProductCardApi,
+    searchProductCardApi,
+    topProduct,
+  } = useIntalnetContext();
+
+  const [search, setSearch] = useState("");
+
+  const handleChange = ({ target }) => {
+    setSearch(target.value);
+    filterSearchProduct(target.value);
+  };
+
+  const filterSearchProduct = (searchterm) => {
+    let resultSearch = searchProductCardApi?.filter((e) => {
+      if (e.name.toString().toLowerCase().includes(searchterm.toLowerCase())) {
+        return e;
+      }
+    });
+    setProductCardApi(resultSearch);
+  };
 
   return (
     <>
@@ -45,8 +66,10 @@ export const TechnologyAccessories = () => {
                     className="search-field"
                     placeholder="Keyword"
                     name="search"
+                    value={search}
+                    onChange={handleChange}
                   />
-                  <input type="submit" value="Search" />
+                  <input type="submit" />
                 </form>
               </div>
 
