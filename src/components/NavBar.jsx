@@ -68,15 +68,15 @@ export const NavBar = () => {
                             <a>Otros Services</a>
                             <ul>
                               <li>
+                                <Link to="technologyaccessories">
+                                  Accesorios de tecnologia
+                                </Link>
+                              </li>
+                              <li>
                                 <a>Camaras se seguridad</a>
                               </li>
                               <li>
                                 <a>Internet dedicado</a>
-                              </li>
-                              <li>
-                                <Link to="technologyaccessories">
-                                  Accesorios de tecnologia
-                                </Link>
                               </li>
                             </ul>
                           </li>
