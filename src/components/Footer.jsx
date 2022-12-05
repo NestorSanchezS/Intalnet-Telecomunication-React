@@ -73,11 +73,12 @@ export const Footer = () => {
                   <strong>Valencia - Córdoba</strong>
                 </p>
                 <p>
-                  Barrio centro.
-                  <strong>Tierralta - Córdoba</strong>
+                  Cr. 13 # 5-31 Barrio El Prado.
+                  <strong> Tierralta - Córdoba</strong>
                 </p>
                 <p>
-                  Carrera 14 Barrio Pradera. <strong>Montería - Córdoba</strong>
+                  Cr. 25 No. 23-74 Calle Principal Barrio la Pradera.{" "}
+                  <strong>Montería - Córdoba</strong>
                 </p>
                 <a href="#" className="small-text">
                   <i className="fa fa-map-marker color-main3 fs-14"></i>

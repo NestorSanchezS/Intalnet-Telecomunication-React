@@ -47,9 +47,9 @@ export const NavBar = () => {
                         </a>
                       </li>
                       <li>
-                        <Link className="no-text-decoration" to="/ourcompany">
+                        <a className="no-text-decoration" href="/ourcompany">
                           Nuestra Empresa
-                        </Link>
+                        </a>
                       </li>
 
                       <li>
@@ -65,8 +65,10 @@ export const NavBar = () => {
                           </li>
 
                           <li>
-                            <a>Otros Services</a>
-                            <ul>
+                            <a href="technologyaccessories">
+                              Accesorios de tecnologia
+                            </a>
+                            {/* <ul>
                               <li>
                                 <Link to="technologyaccessories">
                                   Accesorios de tecnologia
@@ -78,7 +80,7 @@ export const NavBar = () => {
                               <li>
                                 <a>Internet dedicado</a>
                               </li>
-                            </ul>
+                            </ul> */}
                           </li>
                         </ul>
                       </li>
@@ -87,9 +89,7 @@ export const NavBar = () => {
                         <a>Info Usuarios</a>
                         <ul>
                           <li>
-                            <Link to="frequentquestions">
-                              Preguntas Frecuentes
-                            </Link>
+                            <a href="frequentquestions">Preguntas Frecuentes</a>
                           </li>
                           <li>
                             <a href="pqr">
@@ -103,15 +103,15 @@ export const NavBar = () => {
                       </li>
 
                       <li>
-                        <Link className="no-text-decoration" to="/internetsano">
+                        <a className="no-text-decoration" href="/internetsano">
                           Internet Sano
-                        </Link>
+                        </a>
                       </li>
 
                       <li>
-                        <Link className="no-text-decoration" to="/contactus">
+                        <a className="no-text-decoration" href="/contactus">
                           Contactenos
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </nav>

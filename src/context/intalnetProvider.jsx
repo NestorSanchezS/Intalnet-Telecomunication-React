@@ -4,6 +4,7 @@ export const IntalnetContext = createContext();
 
 export const IntalnetProvider = ({ children }) => {
   const [productCardApi, setProductCardApi] = useState([]);
+  const [searchProductCardApi, setSearchProductCardApi] = useState([]);
 
   useEffect(() => {
     try {
@@ -12,6 +13,7 @@ export const IntalnetProvider = ({ children }) => {
         const response = await fetch(url);
         const data = await response.json();
         setProductCardApi(data);
+        setSearchProductCardApi(data);
       };
       getProducts();
     } catch (error) {
@@ -24,7 +26,14 @@ export const IntalnetProvider = ({ children }) => {
   );
 
   return (
-    <IntalnetContext.Provider value={{ topProduct, productCardApi }}>
+    <IntalnetContext.Provider
+      value={{
+        topProduct,
+        setProductCardApi,
+        productCardApi,
+        searchProductCardApi,
+      }}
+    >
       {children}
     </IntalnetContext.Provider>
   );
