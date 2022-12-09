@@ -2114,9 +2114,9 @@ html[xmlns] .slides {
 	zoom: 1;
 }
 
-/* Direction Nav */
+/* Direction Nav - borre asterisco*/
 .flex-direction-nav {
-	*height: 0;
+	height: 0;
 }
 
 .flex-direction-nav a {
@@ -14369,9 +14369,10 @@ a img.aligncenter {
 		transition-property: color, background-color, border-color, padding-top, padding-bottom;
 		zoom: 1;
 	}
-
+ 
+	/* borre asterico */
 	.sf-menu li {
-		*white-space: normal;
+		white-space: normal;
 		white-space: nowrap;
 	}
 
@@ -14485,8 +14486,8 @@ a img.aligncenter {
 	/* second and next levels */
 	.sf-menu > li .mega-menu,
 	.sf-menu li > ul {
-		/* allow long menu items to determine submenu width */
-		*width: 10em;
+		/* allow long menu items to determine submenu width - borre asterico 10em*/
+		width: auto;
 		background-color: #fff;
 		border-radius: 10px;
 		box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.1);
