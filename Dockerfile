@@ -1,4 +1,4 @@
-FROM node:16-alpine3.16 AS build-app
+FROM node:16.18.1-alpine3.16 AS build-app
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ RUN npm run build
 
 
 
-FROM node:16-alpine3.16
+FROM node:16.18.1-alpine3.16
 
 COPY --from=build-app dist app/dist
 
