@@ -16,7 +16,7 @@ RUN npm run build
 
 FROM node:16.18.1-alpine3.16
 
-COPY --from=build-app dist app/dist
+COPY --from=build-app app/dist app/dist
 
 COPY server.js app/server.js
 
