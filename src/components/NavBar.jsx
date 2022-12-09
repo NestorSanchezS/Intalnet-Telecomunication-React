@@ -65,7 +65,10 @@ export const NavBar = () => {
                           </li>
 
                           <li>
-                            <a href="technologyaccessories">
+                            <a
+                              className="no-text-decoration"
+                              href="technologyaccessories"
+                            >
                               Accesorios de tecnologia
                             </a>
                             {/* <ul>
@@ -89,15 +92,25 @@ export const NavBar = () => {
                         <a>Info Usuarios</a>
                         <ul>
                           <li>
-                            <a href="frequentquestions">Preguntas Frecuentes</a>
+                            <a
+                              className="no-text-decoration"
+                              href="frequentquestions"
+                            >
+                              Preguntas Frecuentes
+                            </a>
                           </li>
                           <li>
-                            <a href="pqr">
+                            <a className="no-text-decoration" href="pqr">
                               Peticiones, Quejas y Reclamos (PQR)
                             </a>
                           </li>
                           <li>
-                            <a href="userprotection">Protección al usuario</a>
+                            <a
+                              className="no-text-decoration"
+                              href="userprotection"
+                            >
+                              Protección al usuario
+                            </a>
                           </li>
                         </ul>
                       </li>

@@ -7,9 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { IntalnetProvider } from "./context/intalnetProvider";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <IntalnetProvider>
-      <App />
-    </IntalnetProvider>
-  </React.StrictMode>
+  <IntalnetProvider>
+    <App />
+  </IntalnetProvider>
 );
