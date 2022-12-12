@@ -2,13 +2,11 @@ FROM node:16.18.1-alpine3.16 AS build-app
 
 WORKDIR /app
 
-# COPY package*.json ./
-
-# RUN npm install
-
-COPY . .
+COPY package*.json ./
 
 RUN npm install
+
+COPY . .
 
 RUN npm run build
 
@@ -16,11 +14,17 @@ RUN npm run build
 
 FROM node:16.18.1-alpine3.16
 
-COPY --from=build-app app/dist app/dist
+WORKDIR /app
 
-COPY server.js app/server.js
+COPY --from=build-app /app/dist /app/dist
 
-RUN npm install pm2 -g
+COPY server.js /app/server.js
 
-CMD [ "pm2-runtime", "app/server.js" ]
+# init npm module and install express
+RUN npm init -y
+RUN npm install express
+
+RUN npm install -g pm2
+
+CMD [ "pm2-runtime", "/app/server.js" ]
 
