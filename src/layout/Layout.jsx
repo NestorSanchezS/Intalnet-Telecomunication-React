@@ -7,7 +7,7 @@ import { NavBar } from "../components/NavBar";
 export const Layout = () => {
   return (
     <>
-      {/* <Loader /> */}
+      <Loader />
       <div id="canvas">
         <div id="box_wrapper">
           <NavBar />
