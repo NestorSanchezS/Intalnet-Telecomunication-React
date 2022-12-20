@@ -1,1 +1,1 @@
-export const URL_BASE = `http://${import.meta.env.BASE_URL}/api/v1/`;
+export const URL_BASE = `http://${import.meta.env.DOMAIN}/api/v1/`;
