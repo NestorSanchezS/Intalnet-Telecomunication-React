@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HeaderPage } from "../components/HeaderPage";
 import { QuestionAndAnswer } from "../components/QuestionAndAnswer";
+import { URL_BASE } from "../constans/dominio";
 
 export const FrequentQuestions = () => {
   const [getQuestions, setGetQuestions] = useState([]);
@@ -8,7 +9,7 @@ export const FrequentQuestions = () => {
   useEffect(() => {
     try {
       const callApiQuestions = async () => {
-        const url = "http://localhost:3300/api/v1/questions";
+        const url = URL_BASE + "questions";
         const response = await fetch(url);
         const data = await response.json();
         setGetQuestions(data);

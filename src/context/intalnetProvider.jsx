@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
+import { URL_BASE } from "../constans/dominio";
 
 export const IntalnetContext = createContext();
 
@@ -9,7 +10,7 @@ export const IntalnetProvider = ({ children }) => {
   useEffect(() => {
     try {
       const getProducts = async () => {
-        const url = "http://localhost:3300/api/v1/products";
+        const url = URL_BASE + "products";
         const response = await fetch(url);
         const data = await response.json();
         setProductCardApi(data);

@@ -4,6 +4,7 @@ import { BannerTv } from "../components/BannerTv";
 import { HeaderPage } from "../components/HeaderPage";
 import { Plan } from "../components/Plan";
 import { ButtonGrillTv } from "../components/ButtonGrillTv";
+import { URL_BASE } from "../constans/dominio";
 
 export const CityService = () => {
   const { id } = useParams();
@@ -11,7 +12,7 @@ export const CityService = () => {
   useEffect(() => {
     try {
       const getServerPlansMonteria = async () => {
-        const url = `http://localhost:3300/api/v1/cities/${id}`;
+        const url = URL_BASE + `cities/${id}`;
         const responseMonteria = await fetch(url);
         const dataMonteria = await responseMonteria.json();
         setInfoCity(dataMonteria);
@@ -46,7 +47,8 @@ export const CityService = () => {
         </div>
         <ButtonGrillTv name={name} plane={plans} />
       </section>
-      {name !== "Los Córdoba -Córdoba" && <BannerTv />}
+      {/* {name !== "Los Córdoba -Córdoba" && <BannerTv />} */}
+      <BannerTv />
     </>
   );
 };

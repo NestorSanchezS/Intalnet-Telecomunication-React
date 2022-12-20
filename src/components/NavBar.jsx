@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import messenger from "../assets/images/messeger.png";
 import intalnet from "../assets/INTALNET-TELECOMUNICACIONES.png";
+import { URL_BASE } from "../constans/dominio";
 import { LinkCity } from "./LinkCity";
 
 export const NavBar = () => {
@@ -10,7 +11,7 @@ export const NavBar = () => {
   useEffect(() => {
     try {
       const getApiCity = async () => {
-        const url = "http://localhost:3300/api/v1/cities";
+        const url = URL_BASE + "cities";
         const response = await fetch(url);
         const data = await response.json();
         setDataCity(data);
