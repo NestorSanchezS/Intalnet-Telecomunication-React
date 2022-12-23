@@ -47,8 +47,8 @@ export const CityService = () => {
         </div>
         <ButtonGrillTv name={name} plane={plans} />
       </section>
-      {/* {name !== "Los Córdoba -Córdoba" && <BannerTv />} */}
-      <BannerTv />
+      {name !== "Los Córdoba -Córdoba" && <BannerTv />}
+      {/* <BannerTv /> */}
     </>
   );
 };

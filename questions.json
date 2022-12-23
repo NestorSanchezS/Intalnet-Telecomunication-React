@@ -53,7 +53,7 @@
         {
             "id": 11,
             "question": "¿Qué es una mega?",
-            "answer": "Un router es un dispositivo de red que se encarga de llevar por la ruta adecuada el tráfico. En tu casa seguramente tendrás uno que es el que te conecta con Internet. Los routers funcionan utilizando direcciones IP para saber a donde tienen que ir los paquetes de datos cuando se compra el servicio."
+            "answer": "El megabyte (MB) es una unidad estándar en la informática y la tecnología digital que indica el tamaño de un archivo o la capacidad de una memoria de datos. Este término se compone de la palabra griega “mega” (millón) y “byte”. De esta manera, el byte es el volumen de datos más pequeño que un ordenador puede utilizar en el almacenamiento y procesamiento de datos."
         },
         {
             "id": 12,
