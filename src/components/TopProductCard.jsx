@@ -3,6 +3,7 @@ import img01 from "../assets/images/shop/01.jpg";
 
 export const TopProductCard = ({ topCard }) => {
   const { name, images, price, previous_price } = topCard;
+  console.log(images);
   const width_card2 = {
     width: "100%",
   };

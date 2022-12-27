@@ -1,5 +1,6 @@
 import React from "react";
 import img01 from "../assets/images/shop/13.jpg";
+import { URL_BASE2 } from "../constans/dominio";
 export const CardProduct = ({ product }) => {
   const { id, name, price, previous_price, images, categories } = product;
   const width_card = {
@@ -7,7 +8,7 @@ export const CardProduct = ({ product }) => {
   };
   let imgPath = img01;
   if (images.length > 1) {
-    imgPath = `http://localhost:3300${images[0].path}`;
+    imgPath = URL_BASE2 + images[0].path;
   }
   return (
     <li className="product vertical-item padding-small content-padding">
