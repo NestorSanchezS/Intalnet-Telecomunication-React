@@ -2,7 +2,7 @@ import React from "react";
 import image01 from "../assets/images/gallery/Monteria.jpg";
 import image02 from "../assets/images/gallery/Tierralta.jpg";
 import image03 from "../assets/images/gallery/valencia.jpg";
-import image04 from "../assets/images/gallery/cordoba.jpg";
+import image04 from "../assets/images/gallery/Cordoba.jpg";
 import image05 from "../assets/images/gallery/05.jpeg";
 import image06 from "../assets/images/gallery/06.jpeg";
 import image08 from "../assets/images/gallery/08.png";
